@@ -1,10 +1,11 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+    import {base} from '$app/paths';
 </script>
 
 <nav>
   <!-- Title -->
-	<a href="/" class="title">
+	<a href="{base}" class="title">
 		<b>{config.title}</b>
 	</a>
 
