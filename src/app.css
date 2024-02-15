@@ -23,11 +23,14 @@ html {
 	--brand-dark: var(--orange-3);
 	--text-1-dark: var(--gray-3);
 	--text-2-dark: var(--gray-5);
-	--surface-1-dark: var(--gray-12);
+	--surface-1-dark: 
+	#303841;/*	var(--gray-12);*/
 	--surface-2-dark: var(--gray-11);
 	--surface-3-dark: var(--gray-10);
 	--surface-4-dark: var(--gray-9);
-	--background-dark: var(--gradient-8);
+	--background-dark: 
+	#303841;
+/*	var(--gradient-8);*/
 	--border-dark: var(--gray-9);
 
 	/* light */
@@ -184,6 +187,9 @@ dfn{
     opacity: 0.5;
 }
 
+.anime:hover {
+	opacity: 0;
+}
 
 .demo{
     font-size: xx-large ;
