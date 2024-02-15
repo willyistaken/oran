@@ -1,22 +1,4 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<link href="./_app/immutable/assets/0.C4_8owft.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.DVvUHc53.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.BHz-jyMg.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.DNouHSdf.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.D1P0TzCh.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.C_7gUCZr.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.k-V2XkiO.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.BNaVyrou.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.DK_l9Luk.js">
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <div class="layout svelte-1sq3us8"> <nav class="svelte-scea26"> <a href="." class="title svelte-scea26"><b>All about O-RAN</b></a>  <button data-svelte-h="svelte-izorxe">Toggle</button> </nav> <main class="svelte-1sq3us8"><center><h1 data-svelte-h="svelte-1t0n0r2">音龍宛在<span class="tooltip" data-tooltip="完成所有有可能完成的任務或問題">破台</span></h1> <h2 data-svelte-h="svelte-18b43nl">接下來我不太確定要怎麼做</h2> <img src="https://avatars.worldcubeassociation.org/uploads/user/avatar/2018LAIH01/1687415701.jpeg" alt="ancuber breaks table" width="300" height="200"> <button class="demo" data-svelte-h="svelte-1b0zgg6">做專題</button> <!DOCTYPE html> <head data-svelte-h="svelte-1u1955w"> <script src="https://cdn.jsdelivr.net/npm/d3@7"></script></head> <body data-svelte-h="svelte-bzkh0c"> <svg id="dataviz_area" height="600" width="400"></svg> <script>var svg = d3.select("#dataviz_area");
+import{s as Y,n as k,q as H}from"../chunks/scheduler.DNouHSdf.js";import{S as z,i as D,e as d,s as x,c as f,f as y,y as P,o as v,g as b,d as u,u as L,a as $,v as E,h as l,w as j,n as O,l as S,x as X}from"../chunks/index.k-V2XkiO.js";import"../chunks/paths.D1P0TzCh.js";function A(w){let e,i,a,g='<script src="https://cdn.jsdelivr.net/npm/d3@7"><\/script>',n,o,m=`<svg id="dataviz_area" height="600" width="400"></svg> <script>var svg = d3.select("#dataviz_area");
   width = +svg.node().getBoundingClientRect().width,
   height = +svg.node().getBoundingClientRect().height;
 
@@ -182,32 +164,4 @@ function ticked() {
         .attr("cx", function(d) { return d.x; })
         .attr("cy", function(d) { return d.y; });
     d3.select('#alpha_value').style('flex-basis', (simulation.alpha()*100) + '%');
-}</script></body></center></main>   <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">All about O-RAN © 2024</p> </footer> </div> 
-			
-			<script>
-				{
-					__sveltekit_1wb19i0 = {
-						base: new URL(".", location).pathname.slice(0, -1),
-						assets: "/oran"
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("./_app/immutable/entry/start.DVvUHc53.js"),
-						import("./_app/immutable/entry/app.C_7gUCZr.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+}<\/script>`;return{c(){e=d("!DOCTYPE"),i=x(),a=d("head"),a.innerHTML=g,n=x(),o=d("body"),o.innerHTML=m,this.h()},l(t){e=f(t,"!DOCTYPE",{html:!0}),i=y(t),a=f(t,"HEAD",{"data-svelte-h":!0}),P(a)!=="svelte-1u1955w"&&(a.innerHTML=g),n=y(t),o=f(t,"BODY",{"data-svelte-h":!0}),P(o)!=="svelte-bzkh0c"&&(o.innerHTML=m),this.h()},h(){v(e,"html","")},m(t,c){b(t,e,c),b(t,i,c),b(t,a,c),b(t,n,c),b(t,o,c)},p:k,i:k,o:k,d(t){t&&(u(e),u(i),u(a),u(n),u(o))}}}class I extends z{constructor(e){super(),D(this,e,null,A,Y,{})}}function B(w){let e,i,a='音龍宛在<span class="tooltip" data-tooltip="完成所有有可能完成的任務或問題">破台</span>',g,n,o="接下來我不太確定要怎麼做",m,t,c,C,p,T="做專題",M,h,_;return h=new I({}),{c(){e=d("center"),i=d("h1"),i.innerHTML=a,g=x(),n=d("h2"),n.textContent=o,m=x(),t=d("img"),C=x(),p=d("button"),p.textContent=T,M=x(),L(h.$$.fragment),this.h()},l(s){e=f(s,"CENTER",{});var r=$(e);i=f(r,"H1",{"data-svelte-h":!0}),P(i)!=="svelte-1t0n0r2"&&(i.innerHTML=a),g=y(r),n=f(r,"H2",{"data-svelte-h":!0}),P(n)!=="svelte-18b43nl"&&(n.textContent=o),m=y(r),t=f(r,"IMG",{src:!0,alt:!0,width:!0,height:!0}),C=y(r),p=f(r,"BUTTON",{class:!0,"data-svelte-h":!0}),P(p)!=="svelte-1b0zgg6"&&(p.textContent=T),M=y(r),E(h.$$.fragment,r),r.forEach(u),this.h()},h(){H(t.src,c="https://avatars.worldcubeassociation.org/uploads/user/avatar/2018LAIH01/1687415701.jpeg")||v(t,"src",c),v(t,"alt","ancuber breaks table"),v(t,"width","300"),v(t,"height","200"),v(p,"class","demo")},m(s,r){b(s,e,r),l(e,i),l(e,g),l(e,n),l(e,m),l(e,t),l(e,C),l(e,p),l(e,M),j(h,e,null),_=!0},p:k,i(s){_||(O(h.$$.fragment,s),_=!0)},o(s){S(h.$$.fragment,s),_=!1},d(s){s&&u(e),X(h)}}}class N extends z{constructor(e){super(),D(this,e,null,B,Y,{})}}export{N as component};
