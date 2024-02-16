@@ -8,7 +8,7 @@
 
 	import '../app.css'
 </script>
-
+<html class="light">
 <div class="layout">
   <!-- Header -->
 	<Header />
@@ -20,7 +20,7 @@
   <!-- Footer -->
 	<Footer />
 </div>
-
+</html>
 <style>
 	.layout {
 		height: 100%;
