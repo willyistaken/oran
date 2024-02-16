@@ -1,3 +1,4 @@
+<html lang = "en">
 <script>
   import { base } from '$app/paths';
   import Test from './interective_test.svelte';
@@ -22,7 +23,6 @@
   <p>
     RAN or Radio Access Network is one of the major component of the mobile data network. It is responsible for connecting User Equipments (UE) with the Central Network (CN) wirelessly.
   </p>
-  <br>
 
 <!-- pic -->
 <h5>RAN can be devided into 2 different parts:</h5>
@@ -56,11 +56,38 @@
 <br>
 
 <h3>The history of RAN</h3>
-<p></p>
+<dl>
+  <dt>0G</dt>
+  <dd>
+    After World War II, wireless telephones became available to the general public. The era before cellular networks, often referred to as 0G, marked the advent of commercial wireless communication. Unlike earlier closed telephone systems, 0G represented a significant advancement as it was accessible as a commercial service. These early wireless phones were typically installed in cars or trucks, paving the way for greater mobility and accessibility in telecommunications.
+  </dd>
+  <!-- pic -->
+  <dt>1G</dt>
+  <dd>
+    1G marks the advent of the first generation of cellular network, commercially deployed in 1979 by Nippon Telephone and Telegraph in Tokyo. This network utilized the cellular structure mentioned earlier and introduced the capability of automatic switching between different base stations, enhancing the efficiency of mobile communication. However, it relied on analog signals to transmit and receive information, making it susceptible to noise and distortion.
+  </dd>
+  <dt>2G</dt>
+  <dd>
+    One major difference between 2G and 1G is that 2G transmits signals using digital technology, marking the first generation to do so. Additionally, some 2G systems began to support SMS (Short Message Service) and simple data transmission, expanding the capabilities of mobile communication. However, 2G is now being phased out due to its comparatively low speed and transmission rate.
+  </dd>
+  <dt>3G</dt>
+  <dd>
+    3G is characterized by its ability to support high-speed mobile data, typically in the range of a few hundred kilobits per second (kbps). One of its key objectives is to provide standardized internet communication protocols, enabling users to browse the internet and access various data from anywhere in the world. Moreover, 3G combines wireless communication with the internet, creating a new system capable of handling images, music, video, and web browsing, which forms the foundation of the modern mobile network we are familiar with today. It uses a new technique called CDMA (Code Division Multiple Access) to efficiently package data for transmission. 
+  </dd>
+  <!-- pic -->
+  <dt>4G</dt>
+  <dd>
+    4G represents a significant advancement over 3G, offering speeds up to 10 times faster than 3G. It achieves this through the utilization of Orthogonal Frequency Division Multiple Access (OFDMA) technology. OFDMA effectively converts high-speed signals into multiple parallel lower-speed signals, thereby enhancing the efficiency of frequency spectrum utilization and increasing data transmission rates.  
+  </dd>
+  <!-- pic -->
+  <dt>5G</dt>
+  <dd></dd>
+</dl>
 
 
 
 </body>
+
 <!--
 <center>
   <button class="demo" >做專題</button>
@@ -70,3 +97,4 @@
 -->
 
 <!-- <span class="tooltip" data-tooltip="完成所有有可能完成的任務或問題">破台</span>*/ > -->
+</html>
