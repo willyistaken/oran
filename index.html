@@ -5,188 +5,22 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link href="./_app/immutable/assets/0.C4_8owft.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.DVvUHc53.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.BHz-jyMg.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.DNouHSdf.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.D1P0TzCh.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.C_7gUCZr.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.k-V2XkiO.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.BNaVyrou.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.DK_l9Luk.js">
+		<link href="./_app/immutable/assets/0.y88GXw8C.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.R5z7s_V5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.-jUNB9vG.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.FdFjnjtv.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.4fL3sV58.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.S7HTTjDq.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.vSXNCIm6.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.h3N5BMZj.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.Y-mYvqhH.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <div class="layout svelte-1sq3us8"> <nav class="svelte-scea26"> <a href="." class="title svelte-scea26"><b>All about O-RAN</b></a>  <button data-svelte-h="svelte-izorxe">Toggle</button> </nav> <main class="svelte-1sq3us8"><center><h1 data-svelte-h="svelte-1t0n0r2">音龍宛在<span class="tooltip" data-tooltip="完成所有有可能完成的任務或問題">破台</span></h1> <h2 data-svelte-h="svelte-18b43nl">接下來我不太確定要怎麼做</h2> <img src="https://avatars.worldcubeassociation.org/uploads/user/avatar/2018LAIH01/1687415701.jpeg" alt="ancuber breaks table" width="300" height="200"> <button class="demo" data-svelte-h="svelte-1b0zgg6">做專題</button> <!DOCTYPE html> <head data-svelte-h="svelte-1u1955w"> <script src="https://cdn.jsdelivr.net/npm/d3@7"></script></head> <body data-svelte-h="svelte-bzkh0c"> <svg id="dataviz_area" height="600" width="400"></svg> <script>var svg = d3.select("#dataviz_area");
-  width = +svg.node().getBoundingClientRect().width,
-  height = +svg.node().getBoundingClientRect().height;
-
-// svg objects
-var link, node;
-// the data - an object with nodes and links
-var graph;
-
-// load the data
-d3.json("miserables.json", function(error, _graph) {
-  if (error) throw error;
-  graph = _graph;
-  initializeDisplay();
-  initializeSimulation();
-});
-
-
-
-//////////// FORCE SIMULATION //////////// 
-
-// force simulator
-var simulation = d3.forceSimulation();
-
-// set up the simulation and event to update locations after each tick
-function initializeSimulation() {
-  simulation.nodes(graph.nodes);
-  initializeForces();
-  simulation.on("tick", ticked);
-}
-
-// values for all forces
-forceProperties = {
-    center: {
-        x: 0.5,
-        y: 0.5
-    },
-    charge: {
-        enabled: true,
-        strength: -30,
-        distanceMin: 1,
-        distanceMax: 2000
-    },
-    collide: {
-        enabled: true,
-        strength: .7,
-        iterations: 1,
-        radius: 5
-    },
-    forceX: {
-        enabled: false,
-        strength: .1,
-        x: .5
-    },
-    forceY: {
-        enabled: false,
-        strength: .1,
-        y: .5
-    },
-    link: {
-        enabled: true,
-        distance: 30,
-        iterations: 1
-    }
-}
-
-// add forces to the simulation
-function initializeForces() {
-    // add forces and associate each with a name
-    simulation
-        .force("link", d3.forceLink())
-        .force("charge", d3.forceManyBody())
-        .force("collide", d3.forceCollide())
-        .force("center", d3.forceCenter())
-        .force("forceX", d3.forceX())
-        .force("forceY", d3.forceY());
-    // apply properties to each of the forces
-    updateForces();
-}
-
-// apply new force properties
-function updateForces() {
-    // get each force by name and update the properties
-    simulation.force("center")
-        .x(width * forceProperties.center.x)
-        .y(height * forceProperties.center.y);
-    simulation.force("charge")
-        .strength(forceProperties.charge.strength * forceProperties.charge.enabled)
-        .distanceMin(forceProperties.charge.distanceMin)
-        .distanceMax(forceProperties.charge.distanceMax);
-    simulation.force("collide")
-        .strength(forceProperties.collide.strength * forceProperties.collide.enabled)
-        .radius(forceProperties.collide.radius)
-        .iterations(forceProperties.collide.iterations);
-    simulation.force("forceX")
-        .strength(forceProperties.forceX.strength * forceProperties.forceX.enabled)
-        .x(width * forceProperties.forceX.x);
-    simulation.force("forceY")
-        .strength(forceProperties.forceY.strength * forceProperties.forceY.enabled)
-        .y(height * forceProperties.forceY.y);
-    simulation.force("link")
-        .id(function(d) {return d.id;})
-        .distance(forceProperties.link.distance)
-        .iterations(forceProperties.link.iterations)
-        .links(forceProperties.link.enabled ? graph.links : []);
-
-    // updates ignored until this is run
-    // restarts the simulation (important if simulation has already slowed down)
-    simulation.alpha(1).restart();
-}
-
-
-
-//////////// DISPLAY ////////////
-
-// generate the svg objects and force simulation
-function initializeDisplay() {
-  // set the data and properties of link lines
-  link = svg.append("g")
-        .attr("class", "links")
-    .selectAll("line")
-    .data(graph.links)
-    .enter().append("line");
-
-  // set the data and properties of node circles
-  node = svg.append("g")
-        .attr("class", "nodes")
-    .selectAll("circle")
-    .data(graph.nodes)
-    .enter().append("circle")
-        .call(d3.drag()
-            .on("start", dragstarted)
-            .on("drag", dragged)
-            .on("end", dragended));
-
-  // node tooltip
-  node.append("title")
-      .text(function(d) { return d.id; });
-  // visualize the graph
-  updateDisplay();
-}
-
-// update the display based on the forces (but not positions)
-function updateDisplay() {
-    node
-        .attr("r", forceProperties.collide.radius)
-        .attr("stroke", forceProperties.charge.strength > 0 ? "blue" : "red")
-        .attr("stroke-width", forceProperties.charge.enabled==false ? 0 : Math.abs(forceProperties.charge.strength)/15);
-
-    link
-        .attr("stroke-width", forceProperties.link.enabled ? 1 : .5)
-        .attr("opacity", forceProperties.link.enabled ? 1 : 0);
-}
-
-// update the display positions after each simulation tick
-function ticked() {
-    link
-        .attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
-
-    node
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
-    d3.select('#alpha_value').style('flex-basis', (simulation.alpha()*100) + '%');
-}</script></body></center></main>   <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">All about O-RAN © 2024</p> </footer> </div> 
+		<div style="display: contents">  <html class="light"><div class="layout svelte-1sq3us8"> <nav class="svelte-1pom0qz"> <a href="." class="title svelte-1pom0qz"><b>All about O-RAN</b></a>  <button class="theme-btn" data-svelte-h="svelte-1qfpzmj">Toggle</button> </nav> <main class="svelte-1sq3us8"><center data-svelte-h="svelte-xejza"><h1>音龍宛在<span class="tooltip" data-tooltip="完成所有有可能完成的任務或問題">破台</span></h1> <h2>接下來我不太確定要怎麼做</h2> <img src="https://avatars.worldcubeassociation.org/uploads/user/avatar/2018LAIH01/1687415701.jpeg" alt="ancuber breaks table" width="300" height="200"> <button class="demo">做專題</button> <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> <dotlottie-player src="https://lottie.host/13bb705e-8bed-49f7-90f5-aa29cff7e8b3/JvKCOYlHpu.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay class="anime"></dotlottie-player></center></main>   <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">All about O-RAN © 2024</p> </footer></div> </html> 
 			
 			<script>
 				{
-					__sveltekit_1wb19i0 = {
+					__sveltekit_16h5vhv = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/oran"
 					};
@@ -196,8 +30,8 @@ function ticked() {
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.DVvUHc53.js"),
-						import("./_app/immutable/entry/app.C_7gUCZr.js")
+						import("./_app/immutable/entry/start.R5z7s_V5.js"),
+						import("./_app/immutable/entry/app.S7HTTjDq.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
