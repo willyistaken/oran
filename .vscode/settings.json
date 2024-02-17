@@ -1,5 +1,6 @@
 {
     "editor.fontSize": 16,
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "~/.vimrc"
+    "vim.vimrc.path": "~/.vimrc",
+    "winopacity.opacity": 245
 }
