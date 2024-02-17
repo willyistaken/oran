@@ -75,7 +75,6 @@ These 2 components communicate with each other via optical fiber or simply a ele
   <dt>5G</dt>
   <dd></dd>
 </dl>
-<img src="src/lib/assets/celltower.svg" alt="cell tower" width=200/>
 </body>
 
 <!--
