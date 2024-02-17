@@ -53,13 +53,19 @@ button {
     using `reverse` means we dont have to put 
     opacity: 0 or scale(.8) anywhere  
   */
-  color: #F0F5F9;
   animation: 
     var(--animation-scale-down) reverse,
     var(--animation-fade-out) reverse;
   animation-timing-function: var(--ease-squish-5);
   animation-duration: 1s;
   
+}
+
+.theme-btn{
+	width:30px;
+	border-color:var(--text-color);
+	background-color:var(--bg-color);
+	color:var(--text-color);
 }
 h1,h2,h3,h4,h5,h6{
   

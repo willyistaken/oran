@@ -3,10 +3,13 @@
              import {base} from '$app/paths';
 const setTheme = () => {
     var cn = document.documentElement.className;
+	 var text = document.getElementById("theme-btn");
     if(cn.includes('light')) {
         document.documentElement.className = 'dark';
+		text.innerHTML = "D";
     } else {
         document.documentElement.className = 'light';
+		text.innerHTML = "L";
     }
     console.log(document.documentElement.className);
 }
@@ -20,7 +23,7 @@ const setTheme = () => {
 
 
 <!-- Theme -->
-<button class = "theme-btn" on:click= {()=>setTheme()} >Toggle</button>
+<button id="theme-btn" class = "theme-btn" on:click= {()=>setTheme()} ><span>L</span></button>
 </nav>
 
 <style>

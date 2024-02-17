@@ -2,6 +2,7 @@
 <script>
   import { base } from '$app/paths';
   import Test from './interective_test.svelte';
+  import CellTowerImage from '$lib/assets/celltower.svg';
 </script>
 
 <body class="content">
@@ -12,7 +13,7 @@
 
 <h1>Purpose of this website</h1>
     In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
-<br>
+
 
 <center><h1>O-RAN</h1></center>
 
@@ -74,9 +75,7 @@ These 2 components communicate with each other via optical fiber or simply a ele
   <dt>5G</dt>
   <dd></dd>
 </dl>
-
-
-
+<img src="src/lib/assets/celltower.svg" alt="cell tower" width=200/>
 </body>
 
 <!--
