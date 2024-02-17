@@ -2,19 +2,21 @@
 	import Footer from './footer.svelte'
 	import Header from './header.svelte'
     import Content from './+page.svelte'
+	import Hack from './hackmd.svelte'
 	import 'open-props/style'
 	import 'open-props/normalize'
 	import 'open-props/buttons'
 
 	import '../app.css'
 </script>
-<html class="light">
+<html class='light'>
 <div class="layout">
   <!-- Header -->
 	<Header />
 
 	<main>
-		<Content />
+		<Hack />
+		<Content/>
 	</main>
 
   <!-- Footer -->

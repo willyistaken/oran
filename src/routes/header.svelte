@@ -3,7 +3,7 @@
              import {base} from '$app/paths';
 const setTheme = () => {
     var cn = document.documentElement.className;
-    if(cn=='light') {
+    if(cn.includes('light')) {
         document.documentElement.className = 'dark';
     } else {
         document.documentElement.className = 'light';

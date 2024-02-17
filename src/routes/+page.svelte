@@ -4,7 +4,7 @@
   import Test from './interective_test.svelte';
 </script>
 
-<body>
+<body class="content">
 <center>
   <h1>Website Title</h1>
   <h2>8th YTP 壹伍伍捌</h2>
