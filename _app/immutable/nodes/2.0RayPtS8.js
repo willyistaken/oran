@@ -1,32 +1,15 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<link href="./_app/immutable/assets/0.ZabKRJXy.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.CFjGyRy8.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.C4vaR95h.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvmtPxVN.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.Cac9jSkG.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.DIWMxXWK.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.CvXTkuja.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.3iE9zB6F.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.0RayPtS8.js">
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <html class="light"><div class="layout svelte-1sq3us8"> <nav class="svelte-1pom0qz"> <a href="." class="title svelte-1pom0qz"><b>All about O-RAN</b></a>  <button class="theme-btn" data-svelte-h="svelte-1qfpzmj">Toggle</button> </nav> <main class="svelte-1sq3us8"><html lang="en" data-svelte-h="svelte-2ifrbb"><script>import { base } from '$app/paths';
-  import Test from './interective_test.svelte';</script> <body><center><h1>Website Title</h1> <h2>8th YTP 壹伍伍捌</h2></center> <h1>Purpose of this website</h1>
+import{s,n as o}from"../chunks/scheduler.BvmtPxVN.js";import{S as r,i as l,e as h,c,y as d,o as m,g as f,d as u}from"../chunks/index.CvXTkuja.js";function p(n){let e,i=`<script>import { base } from '$app/paths';
+  import Test from './interective_test.svelte';<\/script> <body><center><h1>Website Title</h1> <h2>8th YTP 壹伍伍捌</h2></center> <h1>Purpose of this website</h1>
     In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
-<br> <center><h1>O-RAN</h1></center> <h2>What exactly is RAN?</h2>
+<br/> <center><h1>O-RAN</h1></center> <h2>What exactly is RAN?</h2>
     RAN or Radio Access Network is one of the major component of the mobile data network. It is responsible for connecting User Equipments (UE) with the Central Network (CN) wirelessly.
 
- <h5>RAN can be devided into 2 different parts:</h5> <br> <h6>Baseband Unit (BBU):</h6>
+
+<h5>RAN can be devided into 2 different parts:</h5> <br/> <h6>Baseband Unit (BBU):</h6>
   In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
-<br> <h6>Remote Radio Unit (RRU):</h6>
+<br/> <h6>Remote Radio Unit (RRU):</h6>
   In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
-<br>
+<br/>
 -----
 These 2 components communicate with each other via optical fiber or simply a electrical wire. The interface of such connection is called CPRI (Common Public Radio Interface). You can think of it as the USB port on various devices.
  
@@ -34,41 +17,15 @@ These 2 components communicate with each other via optical fiber or simply a ele
  
   The basic structure of a mobile network is that of cellular network, where land areas are divided into cells and is served by one or more base station.
  
- <br> <h2>Okay so like… what is 5G?</h2> 
+
+<br/> <h2>Okay so like… what is 5G?</h2>
+
  
   The fifth-generation technology standard for cellular networks, commonly referred to as 5G, represents the latest advancement in telecommunications. Deployments of 5G began in 2019, heralding a new era with its promise of high speed and low latency. But what makes 5G so important? What&#39;s all the buzz about? To answer these questions, we need to take a detour and delve into the history of RAN (Radio Access Network).
  
-<br> <h3>The history of RAN</h3> <dl><dt>0G</dt><dd>After World War II, wireless telephones became available to the general public. The era before cellular networks, often referred to as 0G, marked the advent of commercial wireless communication. Unlike earlier closed telephone systems, 0G represented a significant advancement as it was accessible as a commercial service. These early wireless phones were typically installed in cars or trucks, paving the way for greater mobility and accessibility in telecommunications.
+<br/> <h3>The history of RAN</h3> <dl><dt>0G</dt><dd>After World War II, wireless telephones became available to the general public. The era before cellular networks, often referred to as 0G, marked the advent of commercial wireless communication. Unlike earlier closed telephone systems, 0G represented a significant advancement as it was accessible as a commercial service. These early wireless phones were typically installed in cars or trucks, paving the way for greater mobility and accessibility in telecommunications.
   </dd><dt>1G</dt><dd>1G marks the advent of the first generation of cellular network, commercially deployed in 1979 by Nippon Telephone and Telegraph in Tokyo. This network utilized the cellular structure mentioned earlier and introduced the capability of automatic switching between different base stations, enhancing the efficiency of mobile communication. However, it relied on analog signals to transmit and receive information, making it susceptible to noise and distortion.
   </dd><dt>2G</dt><dd>One major difference between 2G and 1G is that 2G transmits signals using digital technology, marking the first generation to do so. Additionally, some 2G systems began to support SMS (Short Message Service) and simple data transmission, expanding the capabilities of mobile communication. However, 2G is now being phased out due to its comparatively low speed and transmission rate.
   </dd><dt>3G</dt><dd>3G is characterized by its ability to support high-speed mobile data, typically in the range of a few hundred kilobits per second (kbps). One of its key objectives is to provide standardized internet communication protocols, enabling users to browse the internet and access various data from anywhere in the world. Moreover, 3G combines wireless communication with the internet, creating a new system capable of handling images, music, video, and web browsing, which forms the foundation of the modern mobile network we are familiar with today. It uses a new technique called CDMA (Code Division Multiple Access) to efficiently package data for transmission. 
   </dd><dt>4G</dt><dd>4G represents a significant advancement over 3G, offering speeds up to 10 times faster than 3G. It achieves this through the utilization of Orthogonal Frequency Division Multiple Access (OFDMA) technology. OFDMA effectively converts high-speed signals into multiple parallel lower-speed signals, thereby enhancing the efficiency of frequency spectrum utilization and increasing data transmission rates.  
-  </dd><dt>5G</dt><dd></dd></dl></body>  </html></main>   <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">All about O-RAN © 2024</p> </footer></div> </html> 
-			
-			<script>
-				{
-					__sveltekit_prtxlh = {
-						base: new URL(".", location).pathname.slice(0, -1),
-						assets: "/oran"
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("./_app/immutable/entry/start.CFjGyRy8.js"),
-						import("./_app/immutable/entry/app.DIWMxXWK.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+  </dd><dt>5G</dt><dd></dd></dl></body>`;return{c(){e=h("html"),e.innerHTML=i,this.h()},l(t){e=c(t,"HTML",{lang:!0,"data-svelte-h":!0}),d(e)!=="svelte-2ifrbb"&&(e.innerHTML=i),this.h()},h(){m(e,"lang","en")},m(t,a){f(t,e,a)},p:o,i:o,o,d(t){t&&u(e)}}}class g extends r{constructor(e){super(),l(this,e,null,p,s,{})}}export{g as component};
