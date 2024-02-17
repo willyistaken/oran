@@ -37,6 +37,11 @@ ol {
 	padding: 0;
 }
 
+dl {
+  list-style: none;
+  padding: 0;
+}
+
 li {
 	padding-inline-start: 0;
 }

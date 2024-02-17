@@ -12,17 +12,13 @@
 </center>
 
 <h1>Purpose of this website</h1>
-  <p>
     In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
-  </p>
 <br>
 
 <center><h1>O-RAN</h1></center>
 
 <h2>What exactly is RAN?</h2>
-  <p>
     RAN or Radio Access Network is one of the major component of the mobile data network. It is responsible for connecting User Equipments (UE) with the Central Network (CN) wirelessly.
-  </p>
 
 <!-- pic -->
 <h5>RAN can be devided into 2 different parts:</h5>
@@ -38,21 +34,21 @@
   </blockquote></dd>
 </dl>
 <br>
-<p>
+ 
   These 2 components communicate with each other via optical fiber or simply a electrical wire. The interface of such connection is called CPRI (Common Public Radio Interface). You can think of it as the USB port on various devices.
-</p>
+ 
 <!--- interactive -->
-<p>
+ 
   The basic structure of a mobile network is that of cellular network, where land areas are divided into cells and is served by one or more base station.
-</p>
+ 
 <!--- pic -->
 <br>
 
 <h2>Okay so like… what is 5G?</h2>
 <!-- meme -->
-<p>
+ 
   The fifth-generation technology standard for cellular networks, commonly referred to as 5G, represents the latest advancement in telecommunications. Deployments of 5G began in 2019, heralding a new era with its promise of high speed and low latency. But what makes 5G so important? What's all the buzz about? To answer these questions, we need to take a detour and delve into the history of RAN (Radio Access Network).
-</p>
+ 
 <br>
 
 <h3>The history of RAN</h3>
