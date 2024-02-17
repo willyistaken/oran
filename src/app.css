@@ -24,6 +24,9 @@ body {
 	--font-mono: 'JetBrains Mono', monospace;
 	background-color: var(--bg-color);
 	color:var(--text-color);
+  font-size: 24px;
+  padding-left:4.5%;
+  padding-right:4%;
 }
 
 

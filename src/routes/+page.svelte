@@ -7,8 +7,7 @@
 <body>
 <center>
   <h1>Website Title</h1>
-    <h2>8th YTP 壹伍伍捌</h2>
-    <img src='https://i.imgur.com/SgCSz5F.png' alt="young turing program" width="1500" height="200"/>
+  <h2>8th YTP 壹伍伍捌</h2>
 </center>
 
 <h1>Purpose of this website</h1>
@@ -23,19 +22,15 @@
 <!-- pic -->
 <h5>RAN can be devided into 2 different parts:</h5>
 <br>
-<dl>
-  <dt>Baseband Unit (BBU):</dt>
-  <dd><blockquote>
-    In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
-  </blockquote></dd>
-  <dt>Remote Radio Unit (RRU):</dt>
-  <dd><blockquote>
-    In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
-  </blockquote></dd>
-</dl>
+
+<h6>Baseband Unit (BBU):</h6>
+  In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
 <br>
- 
-  These 2 components communicate with each other via optical fiber or simply a electrical wire. The interface of such connection is called CPRI (Common Public Radio Interface). You can think of it as the USB port on various devices.
+<h6>Remote Radio Unit (RRU):</h6>
+  In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
+<br>
+-----
+These 2 components communicate with each other via optical fiber or simply a electrical wire. The interface of such connection is called CPRI (Common Public Radio Interface). You can think of it as the USB port on various devices.
  
 <!--- interactive -->
  
