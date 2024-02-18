@@ -9,13 +9,13 @@
 
 	import '../app.css'
 </script>
-<html class='light'>
+<html class='light' lang="en">
 <div class="layout">
   <!-- Header -->
 	<Header />
 
 	<main>
-		<Hack />
+		<Hack/>
 		<Content/>
 	</main>
 

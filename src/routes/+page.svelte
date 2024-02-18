@@ -1,16 +1,15 @@
-<html lang = "en">
-<script>
-  import { base } from '$app/paths';
-  import Test from './interective_test.svelte';
-  import CellTowerImage from '$lib/assets/celltower.svg';
-</script>
 
-<body class="content">
+<script lang="ts">
+  import Test from './interective_test.svelte';
+  import CT from "$lib/assets/celltower.svg";
+</script>
+<html lang = "en">
+<div class="content">
+<img src={CT}/>
 <center>
   <h1>Website Title</h1>
   <h2>8th YTP 壹伍伍捌</h2>
-</center>
-
+</center> 
 <h1>Purpose of this website</h1>
     In the era of 5G technology, computers have become an integral part of human life. We chat with others, watch various videos, or even purchase items online. People do almost anything on the internet! Consequently, it is crucial for us to understand how the digital world works. To this end, we have created this website to provide an overview of O-RAN and PTP (Precision Time Protocol), both of which are related to 5G technology.
 
@@ -75,15 +74,5 @@ These 2 components communicate with each other via optical fiber or simply a ele
   <dt>5G</dt>
   <dd></dd>
 </dl>
-</body>
-
-<!--
-<center>
-  <button class="demo" >做專題</button>
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-  <dotlottie-player src="https://lottie.host/13bb705e-8bed-49f7-90f5-aa29cff7e8b3/JvKCOYlHpu.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay class="anime"></dotlottie-player>
-</center>
--->
-
-<!-- <span class="tooltip" data-tooltip="完成所有有可能完成的任務或問題">破台</span>*/ > -->
+</div>
 </html>
