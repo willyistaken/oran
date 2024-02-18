@@ -15,7 +15,6 @@
 	<Header />
 
 	<main>
-		<Hack/>
 		<Content/>
 	</main>
 
