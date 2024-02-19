@@ -7,7 +7,7 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <div class="content">
 
-<img src={CT}/ alt='CT'>
+<img src={CT} alt='CT'/>
 <lottie-player src="https://lottie.host/8a3fa3f3-19f1-4f19-863d-b32b835cebb9/LxurSpEEYS.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay class="anime"></lottie-player>
 <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/test.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay class="anime"></lottie-player>
 <center>
