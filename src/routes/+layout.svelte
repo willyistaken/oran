@@ -15,7 +15,8 @@
 	<Header />
 
 	<main>
-		<Content/>
+		<Hack/>
+
 	</main>
 
   <!-- Footer -->
