@@ -388,7 +388,7 @@
 			capable of autonomously maintaining time for a long period and with great accuracy.</span
 		>
 	
-		<center><img src={RootedTree}/></center>
+		<center><img src={RootedTree} width=70% alt="A rooted tree demo of a network"/></center>
 	
 	<h4 id="Transparent-ClockTC" data-id="Transparent-ClockTC"><span>Transparent Clock(TC)</span></h4>
 	
