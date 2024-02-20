@@ -1,4 +1,8 @@
-<div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true">
+<script>
+  import Katex from 'svelte-katex';
+  import CellGraph from "$lib/assets/cellular-graph.svg";
+</script>
+<div id="doc" class="content" data-hard-breaks="true">
 	<h1 id="Website-Title" data-id="Website-Title"><span>Website Title?</span></h1>
 	<h2 id="Purpose-of-Our-Website" data-id="Purpose-of-Our-Website">
 		<span>Purpose of Our Website</span>
@@ -19,7 +23,6 @@
 			is responsible for wirelessly connecting User Equipment (UE) with the Central Network (CN).</span
 		>
 	
-	&lt;pic&gt;&lt;/pic&gt;
 	
 		<span>RAN can be devided into 2 different parts:</span><br />
 		<span>1.Baseband Unit (BBU):</span><br />
@@ -52,12 +55,14 @@
 	
 		<span
 			>The basic structure of a mobile network is that of a cellular network, where land areas are
-			divided into individual
-		</span><em><span>cells</span></em><span>
+			divided into individual cells
 			that are each served by one or more base stations.</span
 		>
-	
-	&lt;pic&gt;<span> cellular network graph</span>&lt;/pic&gt;
+	<center>	
+	<span class = "tooltip" data-tooltip="Representation of a Cellular Network">
+	<img src={CellGraph} />
+	</span>
+	</center>
 	<h2 id="Okay-so-like…-what-is-5G" data-id="Okay-so-like…-what-is-5G">
 		<span>Okay so like</span><span class="smartypants">…</span><span> what is 5G?</span>
 	</h2>
@@ -82,8 +87,11 @@
 			typically installed in cars or trucks, paving the way for greater mobility and accessibility
 			in telecommunications.</span
 		>
-	
-	&lt;pic&gt;<span>car phone</span>&lt;/pic&gt;
+	<center>
+	<span class="tooltip" data-tooltip="Car Phones (Picture from WikiPedia)">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Motorola_4500X.jpg/1200px-Motorola_4500X.jpg" width = 600px />
+	</span>
+	</center>
 	<h4 id="1G" data-id="1G"><span>1G</span></h4>
 	
 		<span
@@ -576,158 +584,10 @@
 			loading="lazy"
 		/><br />
 		&lt;pic&gt;<span>a short video with play buttom</span>&lt;/pic&gt;
-	
-	<p data-original-title="" title="">
-		<strong
-			><span>Formula: Offset = </span><span class="mathjax"
-				><mjx-container
-					class="MathJax CtxtMenu_Attached_0"
-					jax="CHTML"
-					tabindex="0"
-					ctxtmenu_counter="6"
-					style="font-size: 119.5%; position: relative;"
-					><mjx-math class="MJX-TEX" aria-hidden="true"
-						><mjx-mfrac
-							><mjx-frac
-								><mjx-num
-									><mjx-nstrut></mjx-nstrut><mjx-mrow size="s"
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo
-											class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo
-										><mjx-msub
-											><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi
-											><mjx-script style="vertical-align: -0.15em; margin-left: -0.12em;"
-												><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn
-												></mjx-script
-											></mjx-msub
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub
-											><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi
-											><mjx-script style="vertical-align: -0.15em; margin-left: -0.12em;"
-												><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c31"></mjx-c></mjx-mn
-												></mjx-script
-											></mjx-msub
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo
-											class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub
-											><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi
-											><mjx-script style="vertical-align: -0.15em; margin-left: -0.12em;"
-												><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c34"></mjx-c></mjx-mn
-												></mjx-script
-											></mjx-msub
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub
-											><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi
-											><mjx-script style="vertical-align: -0.15em; margin-left: -0.12em;"
-												><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c33"></mjx-c></mjx-mn
-												></mjx-script
-											></mjx-msub
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo
-											class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo
-										></mjx-mrow
-									></mjx-num
-								><mjx-dbox
-									><mjx-dtable
-										><mjx-line></mjx-line><mjx-row
-											><mjx-den
-												><mjx-dstrut></mjx-dstrut><mjx-mn class="mjx-n" size="s"
-													><mjx-c class="mjx-c32"></mjx-c></mjx-mn
-												></mjx-den
-											></mjx-row
-										></mjx-dtable
-									></mjx-dbox
-								></mjx-frac
-							></mjx-mfrac
-						></mjx-math
-					><mjx-assistive-mml unselectable="on" display="inline"
-						><math xmlns="http://www.w3.org/1998/Math/MathML"
-							><mfrac
-								><mrow
-									><mo stretchy="false">(</mo><mo stretchy="false">(</mo><msub
-										><mi>T</mi><mn>2</mn></msub
-									><mo>−</mo><msub><mi>T</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mo>−</mo
-									><mo stretchy="false">(</mo><msub><mi>T</mi><mn>4</mn></msub><mo>−</mo><msub
-										><mi>T</mi><mn>3</mn></msub
-									><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow
-								><mn>2</mn></mfrac
-							></math
-						></mjx-assistive-mml
-					></mjx-container
-				></span
-			></strong
-		><br />
-		<strong
-			><span>Formula: Delay = </span><span class="mathjax"
-				><mjx-container
-					class="MathJax CtxtMenu_Attached_0"
-					jax="CHTML"
-					tabindex="0"
-					ctxtmenu_counter="7"
-					style="font-size: 119.5%; position: relative;"
-					><mjx-math class="MJX-TEX" aria-hidden="true"
-						><mjx-mfrac
-							><mjx-frac
-								><mjx-num
-									><mjx-nstrut></mjx-nstrut><mjx-mrow size="s"
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo
-											class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo
-										><mjx-msub
-											><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi
-											><mjx-script style="vertical-align: -0.15em; margin-left: -0.12em;"
-												><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn
-												></mjx-script
-											></mjx-msub
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub
-											><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi
-											><mjx-script style="vertical-align: -0.15em; margin-left: -0.12em;"
-												><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c31"></mjx-c></mjx-mn
-												></mjx-script
-											></mjx-msub
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo
-											class="mjx-n"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub
-											><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi
-											><mjx-script style="vertical-align: -0.15em; margin-left: -0.12em;"
-												><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c34"></mjx-c></mjx-mn
-												></mjx-script
-											></mjx-msub
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub
-											><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi
-											><mjx-script style="vertical-align: -0.15em; margin-left: -0.12em;"
-												><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c33"></mjx-c></mjx-mn
-												></mjx-script
-											></mjx-msub
-										><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo
-											class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo
-										></mjx-mrow
-									></mjx-num
-								><mjx-dbox
-									><mjx-dtable
-										><mjx-line></mjx-line><mjx-row
-											><mjx-den
-												><mjx-dstrut></mjx-dstrut><mjx-mn class="mjx-n" size="s"
-													><mjx-c class="mjx-c32"></mjx-c></mjx-mn
-												></mjx-den
-											></mjx-row
-										></mjx-dtable
-									></mjx-dbox
-								></mjx-frac
-							></mjx-mfrac
-						></mjx-math
-					><mjx-assistive-mml unselectable="on" display="inline"
-						><math xmlns="http://www.w3.org/1998/Math/MathML"
-							><mfrac
-								><mrow
-									><mo stretchy="false">(</mo><mo stretchy="false">(</mo><msub
-										><mi>T</mi><mn>2</mn></msub
-									><mo>−</mo><msub><mi>T</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mo>+</mo
-									><mo stretchy="false">(</mo><msub><mi>T</mi><mn>4</mn></msub><mo>−</mo><msub
-										><mi>T</mi><mn>3</mn></msub
-									><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow
-								><mn>2</mn></mfrac
-							></math
-						></mjx-assistive-mml
-					></mjx-container
-				></span
-			></strong
-		>
+	<br>
+	<h6>Formula: Offset = <Katex> \frac{'{(T_2-T_1)-(T_4-T_3)}'}{'{2}'} </Katex>	</h6>
+	<h6>Formula: Delay = <Katex> \frac{'{(T_2-T_1)+(T_4-T_3)}'}{'{2}'} </Katex>	</h6>
+
 	
 	<h2 id="Potential-risks-in-a-PTP-network" data-id="Potential-risks-in-a-PTP-network">
 		<span>Potential risks in a PTP network</span>
