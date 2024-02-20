@@ -219,14 +219,6 @@
 		</span>&lt;/pic&gt;
 	
 	
-		<span
-			>As you can see from the above demostration, 5G splits RRU and BBU down into 3 parts, RU, DU
-			and CU. Where DU and CU are software that runs in servers and RU is the radio hardware the
-			send the receive signals. The different option for spliting up functions into these component
-			each have its upsides and downsides and can all be use in various environment depends on its
-			sepcific needs. (The splits option 7.2, however, is the one chosen by the O-RAN Alliances)</span
-		>
-	
 	
 		<span
 			>As demonstrated above, 5G divides the functionality of RRU and BBU into three distinct parts:
@@ -246,8 +238,14 @@
 	</h2>
 	
 		<span
-			>Now that we understand the structure of O-RAN, there's still one important aspect to
-			consider: the need for precise time alignment in 5G networks. Ensuring accurate time alignment
+			>Now that we understand the structure of O-RAN and 5G, there's still one important aspect to
+			consider: Security. With the added complexity that comes from allowing 	interoperability between component providers.
+			The security concern about the O-RAN architecture is of upmost importance and one of the major hurdle we need to
+			overcome on the road of 5G. <br>
+			This problem is multifaceted and complex. In this post however, we will only be discussing PTP, which is one of the protocol used in the O-RAN specification.</span>
+		<h2> PTP </h2>
+			<span>
+			the need for precise time alignment in 5G network. Ensuring accurate time alignment 
 			among RU, DU, CU and 5G devices is crucial for optimal operation. This is where Precision Time
 			Protocol(PTP) comes into play. PTP enables accurate time synchronization throughout a computer
 			network, ensuring that all components of the network are precisely aligned in time.</span
