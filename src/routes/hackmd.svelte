@@ -1,6 +1,7 @@
 <script>
   import Katex from 'svelte-katex';
   import CellGraph from "$lib/assets/cellular-graph.svg";
+  import RootedTree from "$lib/assets/rooted_tree.svg";
 </script>
 <div id="doc" class="content" data-hard-breaks="true">
 	<h1 id="Website-Title" data-id="Website-Title"><span>Website Title?</span></h1>
@@ -387,11 +388,7 @@
 			capable of autonomously maintaining time for a long period and with great accuracy.</span
 		>
 	
-	
-		&lt;pic&gt;<span
-			>a tree with directed edges, in which the root is the GM while the non-root nodes is ordinary
-			clocks.</span
-		>&lt;/pic&gt;
+		<center><img src={RootedTree}/></center>
 	
 	<h4 id="Transparent-ClockTC" data-id="Transparent-ClockTC"><span>Transparent Clock(TC)</span></h4>
 	
