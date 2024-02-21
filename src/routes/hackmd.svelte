@@ -4,6 +4,7 @@
   import RootedTree from "$lib/assets/rooted_tree.svg";
 </script>
 <div id="doc" class="content" data-hard-breaks="true">
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	<h1 id="Website-Title" data-id="Website-Title"><span>Website Title?</span></h1>
 	<h2 id="Purpose-of-Our-Website" data-id="Purpose-of-Our-Website">
 		<span>Purpose of Our Website</span>
@@ -124,8 +125,11 @@
 			technique called CDMA (Code Division Multiple Access) to efficiently package data for
 			transmission.</span
 		>
-	
-	&lt;pic&gt;<span>animation of CDMA</span>&lt;/pic&gt;
+	<center>	
+	<span class="tooltip" data-tooltip="CDMA algorithm mixes signal together in order to increase trasmission efficiency">
+<lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/CDMA.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay class="anime"></lottie-player>
+</span>
+</center>
 	<h4 id="4G" data-id="4G"><span>4G</span></h4>
 	
 		<span
