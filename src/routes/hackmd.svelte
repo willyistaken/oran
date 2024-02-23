@@ -459,7 +459,7 @@
 	
 	
 		<center>
-			<lottie-player src="src\lib\assets\PTP_anime.json" background="transparent" speed="1" autoplay style="width: 70%;" loop></lottie-player>
+			<lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/PTP_anime.json" background="transparent" speed="1" autoplay style="width: 70%;" loop></lottie-player>
 		</center>
 	<br>
 	<h6>Formula: Offset = <Katex> \frac{'{(T_2-T_1)-(T_4-T_3)}'}{'{2}'} </Katex>	</h6>
