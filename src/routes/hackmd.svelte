@@ -62,7 +62,7 @@
 		>
 	<center>	
 	<span class = "tooltip" data-tooltip="Representation of a Cellular Network">
-	<img src={CellGraph} />
+	<img src={CellGraph} alt="Anson Lai breaks table"/>
 	</span>
 	</center>
 	<h2 id="Okay-so-like…-what-is-5G" data-id="Okay-so-like…-what-is-5G">
@@ -91,7 +91,7 @@
 		>
 	<center>
 	<span class="tooltip" data-tooltip="Car Phones (Picture from WikiPedia)">
-	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Motorola_4500X.jpg/1200px-Motorola_4500X.jpg" width = 600px />
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Motorola_4500X.jpg/1200px-Motorola_4500X.jpg" alt="willychan breaks table" width = 600px />
 	</span>
 	</center>
 	<h4 id="1G" data-id="1G"><span>1G</span></h4>
