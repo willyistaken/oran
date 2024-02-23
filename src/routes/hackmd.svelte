@@ -439,150 +439,28 @@
 	
 		<span
 			>In the time exchange process, the master clock initially sends a sync message and records the
-			actual time this message is sent(</span
-		><span class="mathjax"
-			><mjx-container
-				class="MathJax CtxtMenu_Attached_0"
-				jax="CHTML"
-				tabindex="0"
-				ctxtmenu_counter="0"
-				style="font-size: 119.5%; position: relative;"
-				><mjx-math class="MJX-TEX" aria-hidden="true"
-					><mjx-msub
-						><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script
-							style="vertical-align: -0.15em; margin-left: -0.12em;"
-							><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-script
-						></mjx-msub
-					></mjx-math
-				><mjx-assistive-mml unselectable="on" display="inline"
-					><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>T</mi><mn>1</mn></msub></math
-					></mjx-assistive-mml
-				></mjx-container
-			></span
-		><span>). Then, the master clock sends out a follow_up message to convey </span><span
-			class="mathjax"
-			><mjx-container
-				class="MathJax CtxtMenu_Attached_0"
-				jax="CHTML"
-				tabindex="0"
-				ctxtmenu_counter="1"
-				style="font-size: 119.5%; position: relative;"
-				><mjx-math class="MJX-TEX" aria-hidden="true"
-					><mjx-msub
-						><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script
-							style="vertical-align: -0.15em; margin-left: -0.12em;"
-							><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-script
-						></mjx-msub
-					></mjx-math
-				><mjx-assistive-mml unselectable="on" display="inline"
-					><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>T</mi><mn>1</mn></msub></math
-					></mjx-assistive-mml
-				></mjx-container
-			></span
-		><span
+			actual time this message is sent (<Katex>T_1</Katex>). Then, the master clock sends out a follow_up message to convey </span><span
 			>. This procedure is required because sync message alone cannot accurately record the time
 			when it is sent. The slave clock then records both
-		</span><span class="mathjax"
-			><mjx-container
-				class="MathJax CtxtMenu_Attached_0"
-				jax="CHTML"
-				tabindex="0"
-				ctxtmenu_counter="2"
-				style="font-size: 119.5%; position: relative;"
-				><mjx-math class="MJX-TEX" aria-hidden="true"
-					><mjx-msub
-						><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script
-							style="vertical-align: -0.15em; margin-left: -0.12em;"
-							><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-script
-						></mjx-msub
-					></mjx-math
-				><mjx-assistive-mml unselectable="on" display="inline"
-					><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>T</mi><mn>1</mn></msub></math
-					></mjx-assistive-mml
-				></mjx-container
-			></span
-		><span>(from the follow_up message) and the time it receives the sync message(</span><span
-			class="mathjax"
-			><mjx-container
-				class="MathJax CtxtMenu_Attached_0"
-				jax="CHTML"
-				tabindex="0"
-				ctxtmenu_counter="3"
-				style="font-size: 119.5%; position: relative;"
-				><mjx-math class="MJX-TEX" aria-hidden="true"
-					><mjx-msub
-						><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script
-							style="vertical-align: -0.15em; margin-left: -0.12em;"
-							><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-script
-						></mjx-msub
-					></mjx-math
-				><mjx-assistive-mml unselectable="on" display="inline"
-					><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>T</mi><mn>2</mn></msub></math
-					></mjx-assistive-mml
-				></mjx-container
-			></span
-		><span
-			>). At this point, the slave clock becomes aware of the time difference between itself and its
+		</span><span>(from the follow_up message) and the time it receives the sync message (<Katex>T_2</Katex>). At this point, the slave clock becomes aware of the time difference between itself and its
 			master. However, it cannot adjust its time yet because it doesn't know the duration it takes
-			for a message to travel from the master to the slave clock.</span
-		>
+			for a message to travel from the master to the slave clock.</span>
 	
 	
 		<span
 			>Upon receiving the follow-up message from the master, the slave subsequently sends a
-			delay_request message and records the time as
-		</span><span class="mathjax"
-			><mjx-container
-				class="MathJax CtxtMenu_Attached_0"
-				jax="CHTML"
-				tabindex="0"
-				ctxtmenu_counter="4"
-				style="font-size: 119.5%; position: relative;"
-				><mjx-math class="MJX-TEX" aria-hidden="true"
-					><mjx-msub
-						><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script
-							style="vertical-align: -0.15em; margin-left: -0.12em;"
-							><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-script
-						></mjx-msub
-					></mjx-math
-				><mjx-assistive-mml unselectable="on" display="inline"
-					><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>T</mi><mn>3</mn></msub></math
-					></mjx-assistive-mml
-				></mjx-container
-			></span
-		><span
+			delay_request message and records the time as <Katex>\,T_3</Katex>
+		</span><span
 			>. The master clock immideately replies with a delay_response message, including the
-		</span><span class="mathjax"
-			><mjx-container
-				class="MathJax CtxtMenu_Attached_0"
-				jax="CHTML"
-				tabindex="0"
-				ctxtmenu_counter="5"
-				style="font-size: 119.5%; position: relative;"
-				><mjx-math class="MJX-TEX" aria-hidden="true"
-					><mjx-msub
-						><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script
-							style="vertical-align: -0.15em; margin-left: -0.12em;"
-							><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c34"></mjx-c></mjx-mn></mjx-script
-						></mjx-msub
-					></mjx-math
-				><mjx-assistive-mml unselectable="on" display="inline"
-					><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>T</mi><mn>4</mn></msub></math
-					></mjx-assistive-mml
-				></mjx-container
-			></span
-		><span>
-			value. With these four timestamps, the slave clock can calculate the Offset and Delay,
+		</span><span>
+			value <Katex>\,T_4</Katex>. With these four timestamps, the slave clock can calculate the Offset and Delay,
 			enabling it to synchronize the time accurately.</span
 		>
 	
 	
-		<img
-			src="https://hackmd.io/_uploads/H1v2gH2VT.png"
-			alt="make this image a video"
-			loading="lazy"
-		/><br />
-		&lt;pic&gt;<span>a short video with play buttom</span>&lt;/pic&gt;
+		<center>
+			<lottie-player src="src\lib\assets\PTP_anime.json" background="transparent" speed="1" autoplay style="width: 70%;" loop></lottie-player>
+		</center>
 	<br>
 	<h6>Formula: Offset = <Katex> \frac{'{(T_2-T_1)-(T_4-T_3)}'}{'{2}'} </Katex>	</h6>
 	<h6>Formula: Delay = <Katex> \frac{'{(T_2-T_1)+(T_4-T_3)}'}{'{2}'} </Katex>	</h6>
