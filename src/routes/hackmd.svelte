@@ -60,13 +60,21 @@ import { onMount } from 'svelte';
                                                                                     Interface), which serves as a standardized method for transmitting digital data between BBU
                                                                                 and the RRH. Conceptually, CPRI can be likened to the USB port found on various devices.</span
                                                                                 >
+
+{#if LottiePlayer}
+<div class="inlinebox">
 <div class="celltowerlottie">
 <span class="tooltip" data-tooltip="RRU ">
-{#if LottiePlayer}
                                                                                 <LottiePlayer src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/celltower.json" background="transparent" speed="3"  width="{500}" height="{500}" hover={true} loop={true}  />
-{/if}
 </span>
 </div>
+<div class="BBUlottie">
+<span class="tooltip" data-tooltip="BBU">
+                                                                                <LottiePlayer src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/BBU.json" background="transparent" speed="10"  width="{250}" height="{250}" hover={true} loop={true} defaultFrame="4"  />
+</span>
+</div>
+</div>
+{/if}
                                                                                             &lt;
 pic&gt;
 <span

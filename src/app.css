@@ -129,10 +129,25 @@ dfn{
 	color:rgb(86, 101, 116);
 }
 .celltowerlottie{
-	width:50px;	
+  width:25%;
+  display: inline-block;
+  margin-left:-10%;
+  padding: 1rem 1rem;
 }
 .celltowerlottie:hover{
 	transform-origin: 225px 225px;
 	transform: scale(1.1);
   transition: 0.01s;
+}
+.BBUlottie{
+  width:25%;
+  display: inline-block;
+  margin-top:10%;
+  margin-left:25%;
+  padding: 1rem 1rem;
+}
+.inlinebox{	
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
 }
