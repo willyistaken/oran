@@ -103,7 +103,7 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     z-index: 1;
     bottom: 100%;
-    left: 50%;
+	left: 25%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s, visibility 0.3s;
@@ -127,4 +127,12 @@ h1,h2,h3,h4,h5,h6{
 dfn{
 	font-style: normal;
 	color:rgb(86, 101, 116);
+}
+.celltowerlottie{
+	width:50px;	
+}
+.celltowerlottie:hover{
+	transform-origin: 225px 225px;
+	transform: scale(1.1);
+  transition: 0.01s;
 }
