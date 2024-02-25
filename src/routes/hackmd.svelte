@@ -6,7 +6,8 @@
 import Katex from 'svelte-katex';
 import CellGraph from "$lib/assets/cellular-graph.svg";
 import RootedTree from "$lib/assets/rooted_tree.svg";
-
+import CRAN from "$lib/assets/CRAN.svg";
+import DRAN from "$lib/assets/DRAN.svg";
 import { onMount } from 'svelte';
 
 	let LottiePlayer;
@@ -65,25 +66,19 @@ import { onMount } from 'svelte';
 <div class="inlinebox">
 <div class="celltowerlottie">
 <span class="tooltip" data-tooltip="RRU ">
-                                                                                <LottiePlayer src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/celltower.json" background="transparent" speed="3"  width="{500}" height="{500}" hover={true} loop={true}  />
+                                                                                <LottiePlayer src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/celltower.json" background="transparent" speed="3"  width="{500}" height="{500}" hover={true} loop={true} style="position:relative;right:130px;"/>
 </span>
+</div>
+<div class="CPRI">
+<h3 style="position:relative;top:50%;border-width:3px;">&lt;=CPRI=&gt;</h3>
 </div>
 <div class="BBUlottie">
 <span class="tooltip" data-tooltip="BBU">
-                                                                                <LottiePlayer src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/BBU.json" background="transparent" speed="10"  width="{250}" height="{250}" hover={true} loop={true} defaultFrame="4"  />
+                                                                                <LottiePlayer src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/BBU.json" background="transparent" speed="10"  width="{250}" height="{250}" hover={true} loop={true} defaultFrame="4"  style="position:relative;top:220px;"/>
 </span>
 </div>
 </div>
 {/if}
-                                                                                            &lt;
-pic&gt;
-<span
->a interactive image of the whole structure of RAN station where it shows a animation of data
-being transfer from UE to the central network. and when you click on a part it stands out and
-shows its name</span
-
->&lt;
-/pic&gt;
 
 
 <span
@@ -176,10 +171,6 @@ delve into the history of RAN.</span
                                                                                                                                         data services.</span
                                                                                                                                         >
 
-                                                                                                                                        &lt;
-pic&gt;
-<span>animation of OFDMA</span>&lt;
-/pic&gt;
 <h4 id="5G" data-id="5G"><span>5G</span></h4>
 
                     <span>Finally, we arrive at 5G, the newest generation of cellular technology.</span><br />
@@ -200,11 +191,21 @@ pic&gt;
                             the cell site.</span
                             >
 
-                            &lt;
-pic&gt;
-<span>C-RAN vs D-RAN</span>&lt;
-/pic&gt;
+<div style="display:flex;padding:10%;justify-content:space-evenly;">
 
+<div>
+<span class="tooltip" data-tooltip="Centralized RAN">
+<img class="CDRAN" src={CRAN} alt="CRAN" style="padding:10%;scale:1.5;"/>
+</span>
+</div>
+
+<div>
+<span  class="tooltip" data-tooltip="Distributed RAN">
+<img class="CDRAN" src={DRAN} alt="DRAN" style="position:relative;bottom:5px;padding:10%;scale:1.46;"/>
+</span>
+</div>
+
+</div>
 <span
 >By using C-RAN, 5G can lower costs and increase efficiency by pooling all of the BBU
 resources. Additionally, C-RAN enables the running of BBUs as virtualized software on existing
