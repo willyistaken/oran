@@ -400,12 +400,11 @@ id="What-role-does-time-accuracy-play-in-a-network"
                            can achieve clock accuracy in the sub-microsecond range.</span
                            >
 
-
-                           &lt;
-pic&gt;
-<span>a short anime showing the transformation from a graph to a tree</span
->&lt;
-/pic&gt;
+                           <center>
+                                <span class = "tooltip" data-tooltip="The process of transforming from a graph to a tree">
+                                <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Graph_to_Tree.json" background="transparent" speed="1.2" style="width: 750px; height: 750px;" loop autoplay class="anime"></lottie-player>
+                                </span>
+                        </center>
 
 <ul>
 <li>
