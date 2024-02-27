@@ -486,10 +486,11 @@ pic&gt;
                                             solicited, thereby enhancing time accuracy.</span
                                             >
 
-                                            &lt;
-pic&gt;
-<span>show how a BC works in a network</span>&lt;
-/pic&gt;
+                                            <center>
+                                                <span class = "tooltip" data-tooltip="How boundary clocks work!">
+                                                <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Boundary_Clock.json" background="transparent" speed="1" style="width: 1000px; height: 600px;" loop autoplay class="anime"></lottie-player>
+                                                </span>
+                                        </center>
 <h3 id="Time-exchanging-process" data-id="Time-exchanging-process">
         <span>Time exchanging process</span>
         </h3>
