@@ -7,14 +7,14 @@
 		
 		<link href="./_app/immutable/assets/0.uSGMELij.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/index.BQTFKAGU.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.Cw-8mIlD.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.DKwweik9.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.j__v8KAS.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.BVd8spo6.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.B6q9eXUH.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.DAz2NCWB.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.CjwMo_mz.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.l431Wkkf.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.Bxwy118J.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.BQ24v_F8.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.B6qzrIAF.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.BqEwpwRn.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.Bu4DaLAJ.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/2.B9PZz-oI.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -173,15 +173,7 @@ pic&gt;
                            synchronization, as circular configurations are avoided. Within such a network, a single
                            device is designated as the grandmaster (GM), responsible for controlling precise time. Other
                            devices receive time messages from the GM.</span> <span data-svelte-h="svelte-gmz207">Through the exchange of several messages among the clocks in all devices, the entire network
-                           can achieve clock accuracy in the sub-microsecond range.</span>
-
-
-                           &lt;
-pic&gt;
-<span data-svelte-h="svelte-5mt75b">a short anime showing the transformation from a graph to a tree</span>&lt;
-/pic&gt;
-
-<ul data-svelte-h="svelte-ju1adq"><li><span>BMC Algorithm:
+                           can achieve clock accuracy in the sub-microsecond range.</span> <center data-svelte-h="svelte-1a0pyt3"><span class="tooltip" data-tooltip="The process of transforming from a graph to a tree"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Graph_to_Tree.json" background="transparent" speed="1.2" style="width: 750px; height: 750px;" loop autoplay class="anime"></lottie-player></span></center> <ul data-svelte-h="svelte-ju1adq"><li><span>BMC Algorithm:
 using some mechanisms to determine which clock is more suitable to be a
 master. You can see more details
 </span><a href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/" target="_blank" rel="noopener"><span>here</span></a></li></ul> <h3 id="Clock-types" data-id="Clock-types" data-svelte-h="svelte-3cthvn"><span>Clock types</span></h3> <span data-svelte-h="svelte-1gjrzdo">In a PTP network, clocks are categorized into several types with varying priorities and
@@ -214,13 +206,7 @@ pic&gt;
                                             latency may increase and time accuracy may decrease. BC addresses this issue by incorporating
                                             a built-in PTP master clock. As BCs can only communicate with a limited number of slaves,
                                             adding several BCs between masters and their slaves ensures that PTP masters are not over
-                                            solicited, thereby enhancing time accuracy.</span>
-
-                                            &lt;
-pic&gt;
-<span data-svelte-h="svelte-19mkgij">show how a BC works in a network</span>&lt;
-/pic&gt;
-<h3 id="Time-exchanging-process" data-id="Time-exchanging-process" data-svelte-h="svelte-1crzjya"><span>Time exchanging process</span></h3> <span data-svelte-h="svelte-n686pq">Above, we mentioned that devices in a PTP network can synchronize each other&#39;s clocks through
+                                            solicited, thereby enhancing time accuracy.</span> <center data-svelte-h="svelte-h5m6y5"><span class="tooltip" data-tooltip="How boundary clocks work!"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Boundary_Clock.json" background="transparent" speed="1" style="width: 1000px; height: 600px;" loop autoplay class="anime"></lottie-player></span></center> <h3 id="Time-exchanging-process" data-id="Time-exchanging-process" data-svelte-h="svelte-1crzjya"><span>Time exchanging process</span></h3> <span data-svelte-h="svelte-n686pq">Above, we mentioned that devices in a PTP network can synchronize each other&#39;s clocks through
         exchanging time messages in the form of packets. In this section, we will explain the method
         used for time synchronization.</span> <span data-svelte-h="svelte-1t0ia4o">Firstly, we need to understand the terms &quot;Offset&quot; and &quot;Delay&quot; in the synchronization process.
         &quot;Offset&quot; refers to the time difference between the master and slave clock, while &quot;Delay&quot;
@@ -287,7 +273,7 @@ meme&gt;
 			
 			<script>
 				{
-					__sveltekit_6qf07p = {
+					__sveltekit_1hvwoew = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/oran"
 					};
@@ -297,8 +283,8 @@ meme&gt;
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.Cw-8mIlD.js"),
-						import("./_app/immutable/entry/app.CjwMo_mz.js")
+						import("./_app/immutable/entry/start.j__v8KAS.js"),
+						import("./_app/immutable/entry/app.Bxwy118J.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
