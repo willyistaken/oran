@@ -8,6 +8,7 @@ import CellGraph from "$lib/assets/cellular-graph.svg";
 import RootedTree from "$lib/assets/rooted_tree.svg";
 import CRAN from "$lib/assets/CRAN.svg";
 import DRAN from "$lib/assets/DRAN.svg";
+import Traffic from "./traffic.svelte";
 import { onMount } from 'svelte';
 
 	let LottiePlayer;
@@ -214,14 +215,11 @@ learning algorithms are utilized to dynamically allocate resources to different 
 internet traffic patterns, a process facilitated by the RAN Intelligent Controller(RIC).</span
 >
 
+<div>
+<Traffic/>
+</div>
 
-&lt;
-pic&gt;
-<span
->interective component of V-RAN and resource allocation by having a slider to increase a
-traffic of some places and a cloud to add resources</span
-><span class="smartypants">…</span>&lt;
-/pic&gt;
+
 
 <h2 id="This-is-where-O-RAN-comes-in" data-id="This-is-where-O-RAN-comes-in">
         <span>This is where O-RAN comes in</span>

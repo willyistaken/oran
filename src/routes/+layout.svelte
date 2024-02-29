@@ -16,7 +16,6 @@
 
 	<main>
 		<Hack/>
-
 	</main>
 
   <!-- Footer -->
