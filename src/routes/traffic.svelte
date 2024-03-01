@@ -7,7 +7,10 @@
   import {onMount} from "svelte";
 
   let LottiePlayer;
-  var S = ["0","0.5","0.5","0.5","0.5","0.5"];
+  var d = 0.5;
+  var S = [6,d,d,d,d,d];
+  var BBUS = S[0];
+  var state = [0,0,0,0,0,0];
   onMount(async () => {
     const module = await import("@lottiefiles/svelte-lottie-player");
     LottiePlayer = module.LottiePlayer;
@@ -15,17 +18,30 @@
   function circleclick(n){
   	let st = "circle-"+n;
   	const elem = document.getElementById(st);
-  	if(S[n]=="0.5"){
-		S[n]="3";
-		elem.style.stroke="red";
-	}else{
-		S[n]="0.5";
+  	if(state[n]){
+		state[n]=0;
 		elem.style.stroke="rgb(177, 215, 140)";
+	}else{
+		state[n]=1;
+		elem.style.stroke="red";
 	}
+	var cnt = 0;
+	for(var i=1;i<=5;i++){
+		if(state[i]) {
+			cnt+=1;
+		}
+	}
+	for(var i=1;i<=5;i++){
+		if(state[i]){
+			S[i] = d+(S[0]/(2*cnt));
+		}else{
+			S[i] = d;
+		}
+	}
+	BBUS = S[0]+(0.3*(cnt*(10-cnt)));
   }
   function circlehover(ID){
   	  const elem = document.getElementById(ID);
-	  console.log(elem.style.fill);
 	  if(elem.style.fill=="rgb(177, 215, 140)"){
 	  	elem.style.fill="rgb(155,195,120)";
 	  }else{
@@ -37,6 +53,7 @@
 <body>
   {#if LottiePlayer}
   <div class="wrapper">
+  	<h4 style="color:rgb(150,150,150);">Click The User to Increase It's Usage</h4>
     <div class="content">
       <LottiePlayer
         src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/traffic_static.json"
@@ -149,7 +166,18 @@
 	 <circle id="circle-5" r="50.26100" cx="699.11" cy="509.021" on:mouseover={()=>circlehover("circle-5")} on:mouseout={()=>circlehover("circle-5")}  on:click={() => circleclick(5)} 
             style="fill: rgb(177,215,140);stroke-width:8;stroke:rgb(177,215,140);" />
     </svg>
-
+	<div class="content" style="scale:0.5;left:50px">
+      <LottiePlayer
+        src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/BBU.json"
+        background="transparent"
+		width={900};
+		height={600};
+        speed={BBUS}
+        autoplay="{true}"
+        loop="{true}"
+		style="left:30px;top:10px;"
+      />
+	</div>	
   </div>
 
   {/if}
@@ -160,6 +188,7 @@
     place-items: center;
   }
   .content {
+  	pointer-events:none;
     scale: 1.5;
     padding: 20%;
     grid-area: 1/1;
