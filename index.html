@@ -5,16 +5,16 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link href="./_app/immutable/assets/0.LYarJMki.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/0.CB4ZB7hI.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/index.BQTFKAGU.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.ASfPMsw3.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.D5qNuVOe.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.RyeKXEeY.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.BEroA5TL.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.B6q9eXUH.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.-x4blvf9.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.BpVltoRj.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.fbM3CJGM.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.D-YlyiuB.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.BQ24v_F8.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.B6qzrIAF.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.BZsfFeLz.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.zAih28ya.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/2.B9PZz-oI.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -184,15 +184,7 @@ master. You can see more details
                                                                                 (TC). TCs play a crucial role in preventing congestion in the network by adjusting PTP time
                                                                                 messages to eliminate packet processing delays, earning them the moniker &quot;Transparent.&quot; TCs
                                                                                 are capable of compensating for delays during message exchange between clocks, thereby
-                                                                                ensuring precise time alignment.</span>
-
-
-                                                                                &lt;
-pic&gt;
-<span data-svelte-h="svelte-1856sxk">wo pictures to compare interconnections between MC and OC, with and without transparent clock</span>&lt;
-/pic&gt;
-
-<h4 id="Boundary-ClockBC" data-id="Boundary-ClockBC" data-svelte-h="svelte-1nrktla"><span>Boundary Clock(BC)</span></h4> <span data-svelte-h="svelte-1vam6a8">The Boundary Clock (BC) is another type of clock aimed at achieving greater accuracy in PTP.
+                                                                                ensuring precise time alignment.</span> <div style="scale:1.2;display:flex;padding:10%;justify-content:space-evenly;" data-svelte-h="svelte-h5qqfv"><div><span class="tooltip" data-tooltip="Message Exchanging with TC"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Without_TC.json" background="transparent" speed="1" style="width: 500px; height: 180px; padding-right: 7%;" loop autoplay class="anime"></lottie-player></span></div> <div><span class="tooltip" data-tooltip="Messaeg Exchanging without TC"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/With_TC.json" background="transparent" speed="1" style="width: 500px; height: 180px; padding-left: 7%" loop autoplay class="anime"></lottie-player></span></div></div> <h4 id="Boundary-ClockBC" data-id="Boundary-ClockBC" data-svelte-h="svelte-1nrktla"><span>Boundary Clock(BC)</span></h4> <span data-svelte-h="svelte-1vam6a8">The Boundary Clock (BC) is another type of clock aimed at achieving greater accuracy in PTP.
                                   While a master clock is responsible for providing time reference for too many slave clocks,
                                             latency may increase and time accuracy may decrease. BC addresses this issue by incorporating
                                             a built-in PTP master clock. As BCs can only communicate with a limited number of slaves,
@@ -209,7 +201,7 @@ pic&gt;
                 for a message to travel from the master to the slave clock.</span> <span>Upon receiving the follow-up message from the master, the slave subsequently sends a
                 delay_request message and records the time as  <span style="display: none;">\,T_3</span>  <span></span> </span><span data-svelte-h="svelte-142fzk2">. The master clock immideately replies with a delay_response message, including the
                 </span><span>value  <span style="display: none;">\,T_4</span>  <span></span>. With these four timestamps, the slave clock can calculate the Offset and Delay,
-                      enabling it to synchronize the time accurately.</span> <center data-svelte-h="svelte-tr44pe"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/PTP_anime.json" background="transparent" speed="1" autoplay style="width: 70%;" loop></lottie-player></center> <br> <h6>Formula:
+                      enabling it to synchronize the time accurately.</span> <center data-svelte-h="svelte-1cocqj5"><div style="scale:0.9;border-width:5px;padding:5%;border-radius:2%;"><div style="padding:5%;"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/PTP_anime.json" background="transparent" controls speed="0.8" style="width: 70%;"></lottie-player> <h5 style="color:rgb(150,150,150)">Press the play button to see how PTP works!</h5></div></div></center> <h6>Formula:
 Offset =  <span style="display: none;">\frac{(T_2-T_1)-(T_4-T_3)} {2}</span>  <span></span></h6> <h6>Formula:
 Delay =  <span style="display: none;">\frac{(T_2-T_1)+(T_4-T_3)} {2}</span>  <span></span></h6> <h2 id="Potential-risks-in-a-PTP-network" data-id="Potential-risks-in-a-PTP-network" data-svelte-h="svelte-1b8s538"><span>Potential risks in a PTP network</span></h2> <span data-svelte-h="svelte-tmln8l">Since PTP operates by exchanging timing messages, certain risks may arise in this process. If
         a message is deliberately modified by a third party, or if unwanted incorrect messages are
@@ -264,7 +256,7 @@ meme&gt;
 			
 			<script>
 				{
-					__sveltekit_4ao09l = {
+					__sveltekit_5a2x1y = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/oran"
 					};
@@ -274,8 +266,8 @@ meme&gt;
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.ASfPMsw3.js"),
-						import("./_app/immutable/entry/app.BpVltoRj.js")
+						import("./_app/immutable/entry/start.RyeKXEeY.js"),
+						import("./_app/immutable/entry/app.D-YlyiuB.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
