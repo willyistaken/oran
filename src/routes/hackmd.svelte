@@ -529,9 +529,14 @@ pic&gt;
 
 
                       <center>
-                      <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/PTP_anime.json" background="transparent" speed="1" autoplay style="width: 70%;" loop></lottie-player>
-                                         </center>
-                                         <br>
+                        <div style="scale:0.9;border-width:5px;padding:5%;border-radius:2%;">
+                                <div style="padding:5%;">
+                                <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/PTP_anime.json" background="transparent" controls speed="0.8" style="width: 70%;"></lottie-player>
+                                <h5 style="color:rgb(150,150,150)">Press the play button to see how PTP works!</h5>            
+                        </div>  </div> 
+                </center>
+                                         
+                        
                                          <h6>Formula:
 Offset = <Katex> \frac{'{(T_2-T_1)-(T_4-T_3)}'} {'{2}'} </Katex>	</h6>
 <h6>Formula:

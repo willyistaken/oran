@@ -53,7 +53,7 @@
 <body>
   {#if LottiePlayer}
   <div class="wrapper">
-  	<h4 style="color:rgb(150,150,150);">Click The User to Increase It's Usage</h4>
+  	<h4 style="color:rgb(150,150,150);">Click on The Users to Increase It's Usage</h4>
     <div class="content">
       <LottiePlayer
         src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/traffic_static.json"
