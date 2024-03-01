@@ -464,14 +464,20 @@ href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/"
                                                                                 are capable of compensating for delays during message exchange between clocks, thereby
                                                                                 ensuring precise time alignment.</span
                                                                                 >
+                                                                <div style="scale:1.2;display:flex;padding:10%;justify-content:space-evenly;">
+                                                                        <div>
+                                                                                <span class = "tooltip" data-tooltip="Message Exchanging with TC">
+                                                                                        <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Without_TC.json" background="transparent" speed="1" style="width: 500px; height: 180px; padding-right: 7%;" loop autoplay class="anime"></lottie-player>
+                                                                                </span>
+                                                                        </div>
+                                                                        <div>
+                                                                                <span class = "tooltip" data-tooltip="Messaeg Exchanging without TC">
+                                                                                        <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/With_TC.json" background="transparent" speed="1" style="width: 500px; height: 180px;  padding-left: 7%" loop autoplay class="anime"></lottie-player>
+                                                                                </span>
+                                                                        </div>
+                                                                </div>
 
-
-                                                                                &lt;
-pic&gt;
-<span
->wo pictures to compare interconnections between MC and OC, with and without transparent clock</span
->&lt;
-/pic&gt;
+                                                                
 
 <h4 id="Boundary-ClockBC" data-id="Boundary-ClockBC"><span>Boundary Clock(BC)</span></h4>
 
