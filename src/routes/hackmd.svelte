@@ -340,9 +340,10 @@ hardware responsible for transmitting and receiving signals. Each option for spl
                                                    the rapid exchange of messages over vast distances. For example, when an event occurs in the
                                                    USA, individuals living in Japan can be promptly informed through this interconnected network.</span
                                                    ><br />
+                                                   <center>
                                                    <span class = "tooltip" data-tooltip="Computer Network">
-                                                        <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Without_TC.json" background="transparent" speed="1" style="width: 500px; height: 180px; padding-right: 7%;" loop autoplay class="anime"></lottie-player>
-                                                </span>
+                                                        <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Computer_Network.json" background="transparent" speed="1" style="width: 1500px; height: 600px;" loop autoplay class="anime"></lottie-player>
+                                                </span></center>
 
 
 <span
@@ -350,10 +351,6 @@ hardware responsible for transmitting and receiving signals. Each option for spl
 cases, various components such as RU, DU, CU, and different devices continuously exchange
 messages, facilitating seamless communication and data transmission within the network.</span
 ><br />
-&lt;
-pic&gt;
-<span>a working 5G structure</span>&lt;
-/pic&gt;
 
 <h3
 id="What-role-does-time-accuracy-play-in-a-network"
