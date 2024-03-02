@@ -1,7 +1,3 @@
-<header>
-<link rel="stylesheet" href="om-javascript-range-slider.css" />
-<script src="om-javascript-range-slider.js"></script>
-</header>
 <script>
 import { onMount } from 'svelte';
 
