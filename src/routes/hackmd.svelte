@@ -10,6 +10,7 @@ import CRAN from "$lib/assets/CRAN.svg";
 import DRAN from "$lib/assets/DRAN.svg";
 import Traffic from "./traffic.svelte";
 import { onMount } from 'svelte';
+import Functional from "./functional.svelte";
 
 	let LottiePlayer;
 
@@ -263,16 +264,11 @@ meme&gt;
                                       >But how exactly did the O-RAN specification define the component of RAN? And how did they
                                       managed to seperate BBU and RRU? Well, O-RAN splits the component bases on their function in
                                       RAN. This is called
-                                      </span><strong><span>Functional Splits</span></strong><span>.</span>
+                                      </span><strong><span>Functional Splits</span></strong><span>.</span><br>
+<div style="padding:50px;scale:1.2;">
+<Functional />
+</div>
 
-
-                                      &lt;
-pic&gt;
-<span
->Interective element of functional split where a slider control the splits option and three
-component got filled up with function and the difficulty and cost bar changes
-</span>&lt;
-/pic&gt;
 
 
 
@@ -529,7 +525,7 @@ href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/"
 
 
                       <center>
-                        <div style="scale:0.9;border-width:5px;padding:5%;border-radius:2%;">
+                        <div style="scale:1;border-width:5px;padding:5%;border-radius:2%;">
                                 <div style="padding:5%;">
                                 <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/PTP_anime.json" background="transparent" controls speed="0.8" style="width: 70%;"></lottie-player>
                                 <h5 style="color:rgb(150,150,150)">Press the play button to see how PTP works!</h5>            
