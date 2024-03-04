@@ -524,7 +524,7 @@ href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/"
                       >
 
 
-                      <center>
+                <center>
                         <div style="scale:1;border-width:5px;padding:5%;border-radius:2%;">
                                 <div style="padding:5%;">
                                 <lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/PTP_anime.json" background="transparent" controls speed="0.8" style="width: 70%;"></lottie-player>
