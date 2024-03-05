@@ -9,6 +9,7 @@ import RootedTree from "$lib/assets/rooted_tree.svg";
 import CRAN from "$lib/assets/CRAN.svg";
 import DRAN from "$lib/assets/DRAN.svg";
 import Traffic from "./traffic.svelte";
+import Attacks from "./attacks.svelte";
 import { onMount } from 'svelte';
 import Functional from "./functional.svelte";
 
@@ -628,16 +629,9 @@ Delay = <Katex> \frac{'{(T_2-T_1)+(T_4-T_3)}'} {'{2}'} </Katex>	</h6>
                                                                                                 >Below is an interactive computer network where you can experiment with adding various
                                                                                                 attackers to examine their abilities to disrupt the network.</span
                                                                                                 >
-
-
-                                                                                                &lt;
-pic&gt;
-<span
->Interactive:
-here, maybe we can build a computer network, and let users to add different
-attackers themselves.</span
->&lt;
-/pic&gt;
+<div>
+        <Attacks/>
+</div>
 
 <h3 id="How-can-we-ensure-our-safety" data-id="How-can-we-ensure-our-safety">
         <span>How can we ensure our safety</span>
