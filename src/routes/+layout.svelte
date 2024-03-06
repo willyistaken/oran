@@ -10,6 +10,7 @@
 	import '../app.css'
 </script>
 <html class='light' lang="en">
+
 <div class="layout">
   <!-- Header -->
 	<Header />
