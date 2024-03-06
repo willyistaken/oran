@@ -70,7 +70,7 @@
             <LottiePlayer
                 src = "https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/attack/Norm.json"
                 background="transparent"
-                speed="1"
+                speed="1.2"
                 autoplay="{true}"
                 loop="{true}"
             />
@@ -79,7 +79,7 @@
             <LottiePlayer
                 src = "https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/attack/Delay.json"
                 background="transparent"
-                speed="1";
+                speed="1.2";
                 autoplay="{true}"
                 loop="{true}"   
             />
