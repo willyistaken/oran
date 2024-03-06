@@ -125,7 +125,7 @@
       style="width:900; height: 600"
 	  class="content-point"
     >
-	 <circle id="circle-1" r="50.26100" cx="731.1870117" cy="134.307" on:mouseover={()=>circlehover("circle-1")} on:mouseout={()=>circlehover("circle-1")} on:click={() => circleclick(1)} 
+	 <circle id="circle-1" r="50.26100" cx="741.1870117" cy="134.307" on:mouseover={()=>circlehover("circle-1")} on:mouseout={()=>circlehover("circle-1")} on:click={() => circleclick(1)} 
             style="fill: rgb(177,215,140);stroke-width:8;stroke:rgb(177,215,140);" />
     </svg>
 
@@ -145,7 +145,7 @@
       style="width:900; height: 600"
 	  class="content-point"
    	> 
-	 <circle id="circle-3" r="50.26100" cx="168.511" cy="271.21" on:mouseover={()=>circlehover("circle-3")} on:mouseout={()=>circlehover("circle-3")}  on:click={() => circleclick(3)} 
+	 <circle id="circle-3" r="50.26100" cx="158.511" cy="261.21" on:mouseover={()=>circlehover("circle-3")} on:mouseout={()=>circlehover("circle-3")}  on:click={() => circleclick(3)} 
             style="fill: rgb(177,215,140);stroke-width:8;stroke:rgb(177,215,140);" />
     </svg>
 
@@ -154,7 +154,7 @@
       style="width:900; height: 600"
 	  class="content-point"
    	> 
-	 <circle id="circle-4" r="50.26100" cx="367.887" cy="522.388" on:mouseover={()=>circlehover("circle-4")} on:mouseout={()=>circlehover("circle-4")}  on:click={() => circleclick(4)} 
+	 <circle id="circle-4" r="50.26100" cx="367.887" cy="532.388" on:mouseover={()=>circlehover("circle-4")} on:mouseout={()=>circlehover("circle-4")}  on:click={() => circleclick(4)} 
             style="fill: rgb(177,215,140);stroke-width:8;stroke:rgb(177,215,140);" />
     </svg>
 
@@ -163,7 +163,7 @@
       style="width:900; height: 600"
 	  class="content-point"
    	> 
-	 <circle id="circle-5" r="50.26100" cx="699.11" cy="509.021" on:mouseover={()=>circlehover("circle-5")} on:mouseout={()=>circlehover("circle-5")}  on:click={() => circleclick(5)} 
+	 <circle id="circle-5" r="50.26100" cx="720.11" cy="509.021" on:mouseover={()=>circlehover("circle-5")} on:mouseout={()=>circlehover("circle-5")}  on:click={() => circleclick(5)} 
             style="fill: rgb(177,215,140);stroke-width:8;stroke:rgb(177,215,140);" />
     </svg>
 	<div class="content" style="scale:0.5;left:50px">
