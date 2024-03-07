@@ -142,11 +142,13 @@
         padding: 2%;
         height: 50px;
         background-color: #D9DBF1;
+        color:black;
     }
     .Nodeselect {
         padding: 2%;
         height: 50px;
         background-color: #F9F9ED;
+        color:black;
     }
     .interactive{
         pointer-events:none;
