@@ -10,6 +10,9 @@ import CRAN from "$lib/assets/CRAN.svg";
 import DRAN from "$lib/assets/DRAN.svg";
 import Traffic from "./traffic.svelte";
 import Attacks from "./attacks.svelte";
+import What5GIs from "$lib/assets/What5GIs.png";
+import VendorLock from "$lib/assets/VendorLock.png";
+import CyberSecurity from "$lib/assets/CyberSecurity.png";
 import { onMount } from 'svelte';
 import Functional from "./functional.svelte";
 
@@ -25,7 +28,7 @@ import Functional from "./functional.svelte";
 <div id="doc" class="content" data-hard-breaks="true">
                                     <h1 style="white-space:nowrap;"><span>O-RAN & PTP: An Interective Guide</span></h1>
                                             <h2 id="Purpose-of-Our-Website" data-id="Purpose-of-Our-Website">
-                                                    <span>Purpose of Our Website</span>
+                                                    <span>Purpose of This Website</span>
                                                     </h2>
 
                                                     <span
@@ -44,7 +47,7 @@ import Functional from "./functional.svelte";
 																	>
 
 
-                                                                        <span>RAN can be devided into 2 different parts:</span><br />
+                                                                        <span><span class="tooltip" data-tooltip="Radio Access Network">RAN</span> can be devided into 2 different parts:</span><br />
                                                                         <span>1.Baseband Unit (BBU):</span><br />
 																									  <span
                                                                         >"Baseband" refers to a range of frequencies used by signals that have not yet been modulated
@@ -61,8 +64,8 @@ import Functional from "./functional.svelte";
                                                                             <span
                                                                             >These two components communicate with each other via optical fiber or simply an electrical
                                                                             wire. The interface facilitating this connection is known as CPRI (Common Public Radio
-                                                                                    Interface), which serves as a standardized method for transmitting digital data between BBU
-                                                                                and the RRH. Conceptually, CPRI can be likened to the USB port found on various devices.</span
+                                                                                    Interface), which serves as a standardized method for transmitting digital data between <span class="tooltip" data-tooltip="Base Band Unit">BBU</span>
+                                                                                and the <span class="tooltip" data-tooltip="Remote Radio Unit">RRU</span>. Conceptually, CPRI can be likened to the USB port found on various devices.</span
                                                                                 >
 
 {#if LottiePlayer}
@@ -97,17 +100,14 @@ that are each served by one or more base stations.</span
                                              <h2 id="Okay-so-like…-what-is-5G" data-id="Okay-so-like…-what-is-5G">
                                                      <span>Okay so like</span><span class="smartypants">…</span><span> what is 5G?</span>
                                                              </h2>
-                                                             &lt;
-meme&gt;
-<span> </span>&lt;
-/meme&gt;
+<center><img src={What5GIs} width="400px"/></center>
 
 <span
 >The fifth-generation technology standard for cellular networks, commonly referred to as 5G,
 represents the latest advancement in telecommunications. Deployments of 5G began in 2019,
 heralding a new era with its promise of high speed and low latency. But what makes 5G so
 important? What's all the buzz about? To answer these questions, we need to take a detour and
-delve into the history of RAN.</span
+delve into the history of <span class="tooltip" data-tooltip="Radio Access Network">RAN</span>.</span
 >
 
 <h3 id="The-history-of-RAN" data-id="The-history-of-RAN"><span>The history of RAN</span></h3>
@@ -188,7 +188,7 @@ delve into the history of RAN.</span
 
                     <span
                     >One of the main differences between 5G and 4G is the C-RAN architecture, which stands for
-                        Centralized RAN. The concept behind C-RAN is to separate the BBU from the RRU in a base
+                        Centralized RAN. The concept behind C-RAN is to separate the <span class="tooltip" data-tooltip="Base Band Unit">BBU</span> from the <span class="tooltip" data-tooltip="Remote Radio Unit">RRU</span> in a base
                         station, allowing the BBU to be shared among multiple RRUs. This is in contrast to the D-RAN
                         (Distributed RAN) used in previous generations, where the RRU and BBU are bundled together at
                             the cell site.</span
@@ -212,7 +212,7 @@ delve into the history of RAN.</span
 <span
 >By using C-RAN, 5G can lower costs and increase efficiency by pooling all of the BBU
 resources. Additionally, C-RAN enables the running of BBUs as virtualized software on existing
-cloud computing services, a concept known as V-RAN(Virtualized RAN). Moreover, machine
+cloud computing services, a concept known as V-RAN(Virtualized <span class="tooltip" data-tooltip="Radio Access Network">RAN</span>). Moreover, machine
 learning algorithms are utilized to dynamically allocate resources to different RRUs based on
 internet traffic patterns, a process facilitated by the RAN Intelligent Controller(RIC).</span
 >
@@ -232,11 +232,8 @@ internet traffic patterns, a process facilitated by the RAN Intelligent Controll
         fundamental challenge in the actual implementation of these ideas arises:
         vendor lock-in.</span
         >
+<img src="{VendorLock}" width="400px" style="margin-left:10%;" />
 
-        &lt;
-meme&gt;
-&lt;
-/meme&gt;
 <h3 id="Vendor-Lock-In" data-id="Vendor-Lock-In"><span>Vendor Lock-In</span></h3>
 
                                 <span
@@ -248,22 +245,18 @@ meme&gt;
                                 the entire C-RAN architecture.</span
                                 >
 
-                                &lt;
-meme&gt;
-&lt;
-/meme&gt;
 <h3 id="The-solution" data-id="The-solution"><span>The solution?</span></h3>
 
                               <span
                               >To address this problem, the O-RAN ALLIANCE has proposed the Open-RAN specification and
-                              initiated the development of open-source software for RAN.</span
+                              initiated the development of open-source software for <span class="tooltip" data-tooltip="Radio Access Network">RAN</span>.</span
                               >
 
                               <h3 id="O-RAN-Specification" data-id="O-RAN-Specification"><span>O-RAN Specification</span></h3>
 
                                       <span
                                       >But how exactly did the O-RAN specification define the component of RAN? And how did they
-                                      managed to seperate BBU and RRU? Well, O-RAN splits the component bases on their function in
+                                      managed to seperate <span class="tooltip" data-tooltip="Base Band Unit">BBU</span> and <span class="tooltip" data-tooltip="Remote Radio Unit">RRU</span>? Well, O-RAN splits the component bases on their function in
                                       RAN. This is called
                                       </span><strong><span>Functional Splits</span></strong><span>.</span><br>
 <div style="padding:50px;scale:1.2;">
@@ -647,11 +640,7 @@ Delay = <Katex> \frac{'{(T_2-T_1)+(T_4-T_3)}'} {'{2}'} </Katex>	</h6>
         enjoy the convenience brought by 5G technology!</span
         >
 
-        &lt;
-meme&gt;
-&lt;
-/meme&gt;
-
+<center><img src={CyberSecurity} width="600px"/> </center>
 
 <h2 id="Acknowledgements" data-id="Acknowledgements"><span>Acknowledgements</span></h2>
 This Website is created by <a href="https://github.com/willyistaken">WillyChan</a> , <a href="https://github.com/ANCuber">AnsonLai</a> and <a href="https://github.com/BrineYT">EricCheng</a> as an entry for the 8th Young Turing Program contest.
