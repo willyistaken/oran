@@ -35,7 +35,7 @@ import Functional from "./functional.svelte";
                                                     >In the era of 5G technology, computers have become an integral part of human life. We chat
                                                     with others, watch various videos, or even purchase items online. People do almost anything on
                                                         the Internet! Consequently, it is crucial for us to understand how the digital world works. To
-                                                        this end, we have created this website to provide an overview of O-RAN and PTP, both of which
+                                                        this end, we have created this website to provide an overview of O-RAN and <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span>, both of which
                                                         play a vital role in 5G technology.</span
                                                         >
 
@@ -256,7 +256,7 @@ internet traffic patterns, a process facilitated by the RAN Intelligent Controll
 
                                       <span
                                       >But how exactly did the O-RAN specification define the component of RAN? And how did they
-                                      managed to seperate <span class="tooltip" data-tooltip="Base Band Unit">BBU</span> and <span class="tooltip" data-tooltip="Remote Radio Unit">RRU</span>? Well, O-RAN splits the component bases on their function in
+                                      managed to seperate <span class="tooltip" data-tooltip="Base Band Unit"></span> and <span class="tooltip" data-tooltip="Remote Radio Unit">RRU</span>? Well, O-RAN splits the component bases on their function in
                                       RAN. This is called
                                       </span><strong><span>Functional Splits</span></strong><span>.</span><br>
 <div style="padding:50px;scale:1.2;">
@@ -289,12 +289,12 @@ hardware responsible for transmitting and receiving signals. Each option for spl
                    Security. With the added complexity that comes from allowing 	interoperability between component providers.
                    The security concern about the O-RAN architecture is of upmost importance and one of the major hurdle we need to
                    overcome on the road of 5G. <br>
-                   This problem is multifaceted and complex. In this post however, we will only be discussing PTP, which is one of the protocol used in the O-RAN specification.</span>
+                   This problem is multifaceted and complex. In this post however, we will only be discussing <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span>, which is one of the protocol used in the O-RAN specification.</span>
                    <h2> PTP </h2>
                    <span>
                    the need for precise time alignment in 5G network. Ensuring accurate time alignment
                        among RU, DU, CU and 5G devices is crucial for optimal operation. This is where Precision Time
-                           Protocol(PTP) comes into play. PTP enables accurate time synchronization throughout a computer
+                           Protocol(PTP) comes into play. <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> enables accurate time synchronization throughout a computer
                                network, ensuring that all components of the network are precisely aligned in time.</span
                                >
 
@@ -307,7 +307,7 @@ hardware responsible for transmitting and receiving signals. Each option for spl
 
 
                                <span
-                               >To understand such concerns, it's essential to first examine how PTP operates and how
+                               >To understand such concerns, it's essential to first examine how <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> operates and how
                                attackers can disrupt its proper functioning.</span
                                >
 
@@ -316,7 +316,7 @@ hardware responsible for transmitting and receiving signals. Each option for spl
                                        <span
                                        >Simply speaking, the Precision Time Protocol (PTP) aims to synchronize the timing of all
                                            digital devices within a single computer network. The protocol achieves this through a two-way
-                                           exchange of PTP messages to synchronize timing accurately.</span
+                                           exchange of <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> messages to synchronize timing accurately.</span
                                            >
 
                                            <h3 id="Firstly-what-is-a-computer-network" data-id="Firstly-what-is-a-computer-network">
@@ -368,7 +368,7 @@ id="What-role-does-time-accuracy-play-in-a-network"
 
                        <span
                        >In a computer network, multiple nodes are interconnected by edges (connections) between these
-                           devices. By employing the Best Master Clock Algorithm (BMCA), a PTP network determines the
+                           devices. By employing the Best Master Clock Algorithm (BMCA), a <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> network determines the
                            hierarchy of clocks in the network. It removes redundant connections and organizes the entire
                            network into a hierarchical structure resembling "a tree." This simplifies time
                            synchronization, as circular configurations are avoided. Within such a network, a single
@@ -404,14 +404,14 @@ href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/"
                 <h3 id="Clock-types" data-id="Clock-types"><span>Clock types</span></h3>
 
                         <span
-                        >In a PTP network, clocks are categorized into several types with varying priorities and
+                        >In a <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> network, clocks are categorized into several types with varying priorities and
                         hierarchies to ensure effective and efficient time synchronization.</span
                         >
 
                         <h4 id="Ordinary-ClockOC" data-id="Ordinary-ClockOC"><span>Ordinary Clock(OC)</span></h4>
 
                                 <span
-                                >The most common types of clocks in a PTP network include Ordinary Clocks (OC), which can be
+                                >The most common types of clocks in a <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> network include Ordinary Clocks (OC), which can be
                                 further divided into four categories:
                                 masters, slaves, only-slaves, and the grandmaster. These
                                 classifications are not static, as a clock's role may change depending on its interconnections
@@ -423,7 +423,7 @@ href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/"
                                 >In a network comprised of two nodes connected by a single edge, the master clock serves as
                                 the time reference, while the slave clock receives time messages from its master. A slave-only
                                 clock continuously functions as a slave clock, being as a leaf of a tree. Conversely, the
-                                grandmaster represents the entire PTP network and is always a master, responsible for
+                                grandmaster represents the entire <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> network and is always a master, responsible for
                                     providing the time reference for the entire network.</span
                                         >
 
@@ -442,8 +442,8 @@ href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/"
                                                                     <h4 id="Transparent-ClockTC" data-id="Transparent-ClockTC"><span>Transparent Clock(TC)</span></h4>
 
                                                                                 <span
-                                                                                >To enhance accuracy in time synchronization, PTP introduces the use of Transparent Clocks
-                                                                                (TC). TCs play a crucial role in preventing congestion in the network by adjusting PTP time
+                                                                                >To enhance accuracy in time synchronization, <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> introduces the use of Transparent Clocks
+                                                                                (TC). TCs play a crucial role in preventing congestion in the network by adjusting <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> time
                                                                                 messages to eliminate packet processing delays, earning them the moniker "Transparent." TCs
                                                                                 are capable of compensating for delays during message exchange between clocks, thereby
                                                                                 ensuring precise time alignment.</span
@@ -466,11 +466,11 @@ href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/"
 <h4 id="Boundary-ClockBC" data-id="Boundary-ClockBC"><span>Boundary Clock(BC)</span></h4>
 
                                   <span
-                                  >The Boundary Clock (BC) is another type of clock aimed at achieving greater accuracy in PTP.
+                                  >The Boundary Clock (BC) is another type of clock aimed at achieving greater accuracy in <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span>.
                                   While a master clock is responsible for providing time reference for too many slave clocks,
                                             latency may increase and time accuracy may decrease. BC addresses this issue by incorporating
-                                            a built-in PTP master clock. As BCs can only communicate with a limited number of slaves,
-                                            adding several BCs between masters and their slaves ensures that PTP masters are not over
+                                            a built-in <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> master clock. As BCs can only communicate with a limited number of slaves,
+                                            adding several BCs between masters and their slaves ensures that <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> masters are not over
                                             solicited, thereby enhancing time accuracy.</span
                                             >
 
@@ -484,7 +484,7 @@ href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/"
         </h3>
 
         <span
-        >Above, we mentioned that devices in a PTP network can synchronize each other's clocks through
+        >Above, we mentioned that devices in a <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> network can synchronize each other's clocks through
         exchanging time messages in the form of packets. In this section, we will explain the method
         used for time synchronization.</span
         >
@@ -540,23 +540,23 @@ Delay = <Katex> \frac{'{(T_2-T_1)+(T_4-T_3)}'} {'{2}'} </Katex>	</h6>
         <span
         >Since PTP operates by exchanging timing messages, certain risks may arise in this process. If
         a message is deliberately modified by a third party, or if unwanted incorrect messages are
-        generated, a PTP network may fail to maintain its accuracy. It is crucial to remain vigilant
+        generated, a <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> network may fail to maintain its accuracy. It is crucial to remain vigilant
         against such attacks to prevent our digital devices from falling prey to them. In the
-        following section, we will introduce some common PTP attacks and share tips on how to avoid
+        following section, we will introduce some common <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> attacks and share tips on how to avoid
         them.</span
         >
 
         <h3 id="PTP-attack-types" data-id="PTP-attack-types"><span>PTP attack types</span></h3>
 
                 <span
-                >A simple way to classify PTP attack types is to separate them into internal ones and external
+                >A simple way to classify <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> attack types is to separate them into internal ones and external
                 ones.</span
                 >
 
                 <h4 id="Internal-PTP-attack" data-id="Internal-PTP-attack"><span>Internal PTP attack</span></h4>
 
                         <span
-                        >As for internal PTP attacks, attackers can be classified into two levels based on their
+                        >As for internal <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> attacks, attackers can be classified into two levels based on their
                             abilities and their access to a device.</span
                             >
 
@@ -589,7 +589,7 @@ Delay = <Katex> \frac{'{(T_2-T_1)+(T_4-T_3)}'} {'{2}'} </Katex>	</h6>
                                                             secret network encryption or authentication keys. These attackers may attempt to disrupt the
                                                             time synchronization process by exploiting vulnerabilities of devices or connections in the
                                                             network. Their lack of access to cryptographic keys does not hinder their ability to target
-                                                            the network, as they employ various techniques to intercept, generate or modify PTP packets,
+                                                            the network, as they employ various techniques to intercept, generate or modify <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> packets,
                                                                 thus disrupting time synchronization process.</span
                                                                 >
 
@@ -599,8 +599,8 @@ Delay = <Katex> \frac{'{(T_2-T_1)+(T_4-T_3)}'} {'{2}'} </Katex>	</h6>
                                                                                 </h4>
 
                                                                                 <span
-                                                                                >A man-in-the-middle attacker focuses on intercepting and manipulating messages within a PTP
-                                                                                network. This attacker can intercept and modify PTP packets while they are in transit. They
+                                                                                >A man-in-the-middle attacker focuses on intercepting and manipulating messages within a <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span>
+                                                                                network. This attacker can intercept and modify <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> packets while they are in transit. They
                                                                                 typically achieve this by gaining physical access to a node within the network or by gaining
                                                                                 full control of a device within the network.</span
                                                                                 >
@@ -612,7 +612,7 @@ Delay = <Katex> \frac{'{(T_2-T_1)+(T_4-T_3)}'} {'{2}'} </Katex>	</h6>
                                                                                         <span
                                                                                         >A packet injector attacker disrupts the time exchange system by flooding the network with
                                                                                         excessive network traffic. Despite having limited attack capabilities in an untrusted network,
-                                                                                        it can still render a PTP network out of function by overwhelming it with a high volume of
+                                                                                        it can still render a <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> network out of function by overwhelming it with a high volume of
                                                                                         packets, causing congestion and hindering the synchronization process.</span
                                                                                         >
 
@@ -631,10 +631,10 @@ Delay = <Katex> \frac{'{(T_2-T_1)+(T_4-T_3)}'} {'{2}'} </Katex>	</h6>
         </h2>
 
         <span
-        >While cybersecurity in PTP or computer networks is primarily the responsibility of software
-        engineers, there are steps we can take to protect ourselves. Installing a firewall, exercising
+        >While cybersecurity in <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> or computer networks is primarily the responsibility of software
+        engineers, there are steps we can take toㄘ protect ourselves. Installing a firewall, exercising
         caution with suspicious emails or links, and avoiding visiting abnormal websites are all
-        measures that can help prevent potential invasions by PTP attackers. By taking these
+        measures that can help prevent potential invasions by <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> attackers. By taking these
         precautions, we can safeguard ourselves and lower the risk of financial loss, especially when
         engaging in activities such as stock speculation. Ultimately, these measures allow us to fully
         enjoy the convenience brought by 5G technology!</span

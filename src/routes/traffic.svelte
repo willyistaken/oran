@@ -50,7 +50,7 @@
   }
 </script>
 
-<body>
+<body style="zoom:100%;">
   {#if LottiePlayer}
   <div class="wrapper">
   	<h4 style="color:rgb(150,150,150);">Click on The Users to Increase It's Usage</h4>
