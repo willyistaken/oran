@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/0.DVHq6Pk-.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/index.BQTFKAGU.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.Bk_9S6mn.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.Bt_e6o2Z.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.Bj_NYYYq.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.CpX67TrY.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CbLhJ6DH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.BQ24v_F8.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.CJ0a16Qn.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CA9wxLb0.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.LaxlpTyH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/katex.BmffG-Dk.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <html class="light" lang="en"><div class="layout svelte-1sq3us8"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">  <nav class="svelte-xlcger"> <a href="." class="title svelte-xlcger"><b>O-RAN &amp; PTP</b></a> <a href="./RAN" class="navi svelte-xlcger" data-svelte-h="svelte-1n5q685">RAN</a> <a href="./5G" class="navi svelte-xlcger" data-svelte-h="svelte-8hw9o7">5G</a> <a href="./ORAN" class="navi svelte-xlcger" data-svelte-h="svelte-n6fo9z">ORAN</a> <a href="./PTP-Overview" class="navi svelte-xlcger" data-svelte-h="svelte-1xgtpxp">Overview of PTP</a> <a href="./How-Does-PTP-Work" class="navi svelte-xlcger" data-svelte-h="svelte-w5rhct">How Does PTP Work?</a> <a href="./PTP-Attacks" class="navi svelte-xlcger" data-svelte-h="svelte-1nbv0ye">Attacks</a>  <button id="theme-btn" class="theme-btn" data-svelte-h="svelte-1o8xnog"><span>L</span></button></nav> <div style="display:grid" data-svelte-h="svelte-epdwz1"><img id="ytp1" src="https://www.tw-ytp.org/wp-content/uploads/2018/06/2018-logo_ytp_rgb_w.png" width="500px" height="200px" style="visibility:hidden; "> <img id="ytp2" src="https://www.tw-ytp.org/wp-content/uploads/2022/03/logo_ytp.png" width="500px" height="200px" style="position:absolute;"> </div> <head data-svelte-h="svelte-bo7pj8"><script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script> <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script></head>  <div id="doc" class="content" data-hard-breaks="true"><h1 id="How-PTP-works" data-id="How-PTP-works" data-svelte-h="svelte-rcdasg"><span>How PTP works</span></h1> <span data-svelte-h="svelte-1anhdbl">In a computer network, multiple nodes are interconnected by edges (connections) between these
+   devices. By employing the Best Master Clock Algorithm (BMCA), a PTP network determines the
+   hierarchy of clocks in the network. It removes redundant connections and organizes the entire
+   network into a hierarchical structure resembling &quot;a tree.&quot; This simplifies time
+   synchronization, as circular configurations are avoided. Within such a network, a single
+   device is designated as the grandmaster (GM), responsible for controlling precise time. Other
+   devices receive time messages from the GM.</span> <span data-svelte-h="svelte-jqs3z3">Through the exchange of several messages among the clocks in all devices, the entire network
+   can achieve clock accuracy in the sub-microsecond range.</span> <center data-svelte-h="svelte-10mfldv"><span class="tooltip" data-tooltip="The process of transforming from a graph to a tree"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Graph_to_Tree.json" background="transparent" speed="1.2" style="width: 750px; height: 750px;" loop autoplay class="anime"></lottie-player></span></center> <ul data-svelte-h="svelte-nz74k6"><li><span>BMC Algorithm:
+         using some mechanisms to determine which clock is more suitable to be a
+         master. You can see more details
+         </span><a href="https://blog.meinbergglobal.com/2022/02/01/bmca-deep-dive-part-1/" target="_blank" rel="noopener"><span>here</span></a></li></ul> <h3 id="Clock-types" data-id="Clock-types" data-svelte-h="svelte-3cthvn"><span>Clock types</span></h3> <span data-svelte-h="svelte-1dfxpw4">In a PTP network, clocks are categorized into several types with varying priorities and
+   hierarchies to ensure effective and efficient time synchronization.</span> <h4 id="Ordinary-ClockOC" data-id="Ordinary-ClockOC" data-svelte-h="svelte-q16xh5"><span>Ordinary Clock(OC)</span></h4> <span data-svelte-h="svelte-n21fsf">The most common types of clocks in a PTP network include Ordinary Clocks (OC), which can be
+   further divided into four categories:
+   masters, slaves, only-slaves, and the grandmaster. These
+   classifications are not static, as a clock&#39;s role may change depending on its interconnections
+   with other clocks.</span> <span data-svelte-h="svelte-654414">In a network comprised of two nodes connected by a single edge, the master clock serves as
+   the time reference, while the slave clock receives time messages from its master. A slave-only
+   clock continuously functions as a slave clock, being as a leaf of a tree. Conversely, the
+   grandmaster represents the entire PTP network and is always a master, responsible for
+   providing the time reference for the entire network.</span> <h4 id="GrandmasterGM" data-id="GrandmasterGM" data-svelte-h="svelte-16sufzb"><span>Grandmaster(GM)</span></h4> <span data-svelte-h="svelte-1mj13kr">As explained above, there is </span><strong data-svelte-h="svelte-1elipq9"><span>ONLY</span></strong><span data-svelte-h="svelte-ljg7ou">one Grand Master (GM) in a single network, serving as the benchmark for time synchronization
+   and providing standard time information to other clocks across the network. Unlike other types
+   of clocks in the network, the GM typically receives time messages from an external time
+   reference. However, in the case of cyberattacks or other emergencies, grandmasters must be
+   capable of autonomously maintaining time for a long period and with great accuracy.</span> <center data-svelte-h="svelte-xltt2e"><img src="/oran/_app/immutable/assets/rooted_tree.Bk6bMbgs.svg" width="70%" alt="A rooted tree demo of a network"></center> <h4 id="Transparent-ClockTC" data-id="Transparent-ClockTC" data-svelte-h="svelte-18ejhgo"><span>Transparent Clock(TC)</span></h4> <span data-svelte-h="svelte-1r6jrnw">To enhance accuracy in time synchronization, PTP introduces the use of Transparent Clocks
+   (TC). TCs play a crucial role in preventing congestion in the network by adjusting PTP time
+   messages to eliminate packet processing delays, earning them the moniker &quot;Transparent.&quot; TCs
+   are capable of compensating for delays during message exchange between clocks, thereby
+   ensuring precise time alignment.</span> <div style="scale:1.2;display:flex;padding:10%;justify-content:space-evenly;" data-svelte-h="svelte-1qds435"><div><span class="tooltip" data-tooltip="Message Exchanging with TC"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Without_TC.json" background="transparent" speed="1" style="width: 500px; height: 180px; padding-right: 7%;" loop autoplay class="anime"></lottie-player></span></div> <div><span class="tooltip" data-tooltip="Messaeg Exchanging without TC"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/With_TC.json" background="transparent" speed="1" style="width: 500px; height: 180px; padding-left: 7%" loop autoplay class="anime"></lottie-player></span></div></div> <h4 id="Boundary-ClockBC" data-id="Boundary-ClockBC" data-svelte-h="svelte-1nrktla"><span>Boundary Clock(BC)</span></h4> <span data-svelte-h="svelte-263i74">The Boundary Clock (BC) is another type of clock aimed at achieving greater accuracy in PTP.
+   While a master clock is responsible for providing time reference for too many slave clocks,
+   latency may increase and time accuracy may decrease. BC addresses this issue by incorporating
+   a built-in PTP master clock. As BCs can only communicate with a limited number of slaves,
+   adding several BCs between masters and their slaves ensures that PTP masters are not over
+   solicited, thereby enhancing time accuracy.</span> <center data-svelte-h="svelte-1hkp25z"><span class="tooltip" data-tooltip="How boundary clocks work!"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/Boundary_Clock.json" background="transparent" speed="1" style="width: 1000px; height: 600px;" loop autoplay class="anime"></lottie-player></span></center> <h3 id="Time-exchanging-process" data-id="Time-exchanging-process" data-svelte-h="svelte-h9z9yg"><span>Time exchanging process</span></h3> <span data-svelte-h="svelte-1pbvby">Above, we mentioned that devices in a PTP network can synchronize each other&#39;s clocks through
+   exchanging time messages in the form of packets. In this section, we will explain the method
+   used for time synchronization.</span> <span data-svelte-h="svelte-uyjcxy">Firstly, we need to understand the terms &quot;Offset&quot; and &quot;Delay&quot; in the synchronization process.
+   &quot;Offset&quot; refers to the time difference between the master and slave clock, while &quot;Delay&quot;
+   represents the time needed to transfer packets from the master to the slave.</span> <span>In the time exchange process, the master clock initially sends a sync message and records the
+      actual time this message is sent (
+       <span style="display: none;">T_1</span>  <span></span>
+      ). Then, the master clock sends out a follow_up message to convey</span> <span data-svelte-h="svelte-k95hib">. This procedure is required because sync message alone cannot accurately record the time
+   when it is sent. The slave clock then records both</span> <span>(from the follow_up message) and the time it receives the sync message (
+       <span style="display: none;">T_2</span>  <span></span>
+      ). At this point, the slave clock becomes aware of the time difference between itself and its
+      master. However, it cannot adjust its time yet because it doesn&#39;t know the duration it takes
+      for a message to travel from the master to the slave clock.</span> <span>Upon receiving the follow-up message from the master, the slave subsequently sends a
+      delay_request message and records the time as 
+       <span style="display: none;">\,T_3</span>  <span></span></span> <span data-svelte-h="svelte-m64356">. The master clock immideately replies with a delay_response message, including the</span> <span>value 
+       <span style="display: none;">\,T_4</span>  <span></span>
+      . With these four timestamps, the slave clock can calculate the Offset and Delay,
+      enabling it to synchronize the time accurately.</span> <center data-svelte-h="svelte-hcbptj"><div style="scale:1;border-width:5px;padding:5%;border-radius:2%;"><div style="padding:5%;"><lottie-player src="https://raw.githubusercontent.com/willyistaken/oran/main/src/lib/assets/PTP_anime.json" background="transparent" controls speed="0.8" style="width: 70%;"></lottie-player> <h5 style="color:rgb(150,150,150)">Press the play button to see how PTP works!</h5></div></div></center> <h6>Formula:
+      Offset = 
+       <span style="display: none;">\frac{(T_2-T_1)-(T_4-T_3)} {2}</span>  <span></span></h6> <h6>Formula:
+      Delay = 
+       <span style="display: none;">\frac{(T_2-T_1)+(T_4-T_3)} {2}</span>  <span></span></h6></div>   <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">O-RAN &amp; PTP © 2024</p> </footer></div> </html> 
+			
+			<script>
+				{
+					__sveltekit_u4ejh2 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/oran"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.Bk_9S6mn.js"),
+						import("./_app/immutable/entry/app.CbLhJ6DH.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

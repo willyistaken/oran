@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/0.DVHq6Pk-.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/5.DRoLP06v.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/index.BQTFKAGU.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.Bk_9S6mn.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.Bt_e6o2Z.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.Bj_NYYYq.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.CpX67TrY.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CbLhJ6DH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.BQ24v_F8.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.CJ0a16Qn.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CA9wxLb0.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/5.CsVSlaWv.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/katex.BmffG-Dk.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <html class="light" lang="en"><div class="layout svelte-1sq3us8"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">  <nav class="svelte-xlcger"> <a href="." class="title svelte-xlcger"><b>O-RAN &amp; PTP</b></a> <a href="./RAN" class="navi svelte-xlcger" data-svelte-h="svelte-1n5q685">RAN</a> <a href="./5G" class="navi svelte-xlcger" data-svelte-h="svelte-8hw9o7">5G</a> <a href="./ORAN" class="navi svelte-xlcger" data-svelte-h="svelte-n6fo9z">ORAN</a> <a href="./PTP-Overview" class="navi svelte-xlcger" data-svelte-h="svelte-1xgtpxp">Overview of PTP</a> <a href="./How-Does-PTP-Work" class="navi svelte-xlcger" data-svelte-h="svelte-w5rhct">How Does PTP Work?</a> <a href="./PTP-Attacks" class="navi svelte-xlcger" data-svelte-h="svelte-1nbv0ye">Attacks</a>  <button id="theme-btn" class="theme-btn" data-svelte-h="svelte-1o8xnog"><span>L</span></button></nav> <div style="display:grid" data-svelte-h="svelte-epdwz1"><img id="ytp1" src="https://www.tw-ytp.org/wp-content/uploads/2018/06/2018-logo_ytp_rgb_w.png" width="500px" height="200px" style="visibility:hidden; "> <img id="ytp2" src="https://www.tw-ytp.org/wp-content/uploads/2022/03/logo_ytp.png" width="500px" height="200px" style="position:absolute;"> </div> <head data-svelte-h="svelte-bo7pj8"><script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script> <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script></head>  <div id="doc" class="content" data-hard-breaks="true"><h1 id="This-is-where-O-RAN-comes-in" data-id="This-is-where-O-RAN-comes-in" style="white-space:nowrap" data-svelte-h="svelte-w5hlqd"><span>This is where O-RAN comes in</span></h1> <span data-svelte-h="svelte-x538u1">As discussed earlier, the C-RAN model in 5G has enabled numerous innovations. However, a
+   fundamental challenge in the actual implementation of these ideas arises:
+   vendor lock-in.</span> <img src="/oran/_app/immutable/assets/VendorLock.BWueSCJ7.png" width="400px" style="margin-left:10%;"> <h3 id="Vendor-Lock-In" data-id="Vendor-Lock-In" data-svelte-h="svelte-13phsx7"><span>Vendor Lock-In</span></h3> <span data-svelte-h="svelte-1g6l1j5">Vendor lock-in occurs due to poorly defined and unstandardized communication protocols
+   between different components of the network. This lack of standardization leads manufacturers
+   to employ their own proprietary protocols in their products. Consequently, components from
+   different manufacturers are unable to communicate effectively. This issue is rather serious as
+   it prevents the mixing and matching of BBUs and RRUs, thereby undermining the effectiveness of
+   the entire C-RAN architecture.</span> <h3 id="The-solution" data-id="The-solution" data-svelte-h="svelte-zm55u3"><span>The solution?</span></h3> <span data-svelte-h="svelte-1bbkfqm">To address this problem, the O-RAN ALLIANCE has proposed the Open-RAN specification and
+   initiated the development of open-source software for <span class="tooltip" data-tooltip="Radio Access Network">RAN</span>.</span> <h3 id="O-RAN-Specification" data-id="O-RAN-Specification" data-svelte-h="svelte-6f1cgs"><span>O-RAN Specification</span></h3> <span data-svelte-h="svelte-1q31i1d">But how exactly did the O-RAN specification define the component of RAN? And how did they
+   managed to seperate <span class="tooltip" data-tooltip="Base Band Unit">BBU</span> and <span class="tooltip" data-tooltip="Remote Radio Unit">RRU</span>? Well, O-RAN splits the component bases on their function in
+   RAN. This is called
+   </span><strong data-svelte-h="svelte-ygtnud"><span>Functional Splits</span></strong><span data-svelte-h="svelte-1ft2yuk">.</span><br> <div style="padding:50px;scale:1.2;"><body class="svelte-9v9his" data-svelte-h="svelte-xo141g"><div style="height:150px;display:flex;flex-direction:row;justify-content:center;align-items:flex-end;"><h3 style="margin:45px;">CU</h3> <h3 style="margin:45px;">DU</h3> <h3 style="margin:45px;">RU</h3></div> <div style="height:350px;display:flex;flex-direction:row;justify-content:center;align-items:flex-end;"><div id="cu" class="condiv svelte-9v9his"></div> <div id="du" class="condiv svelte-9v9his"></div> <div id="ru" class="condiv svelte-9v9his"></div></div> <center><div class="range-slider svelte-9v9his"><center><input value="2" min="1" max="8" step="1" type="range" class="slider svelte-9v9his" id="slider1"> <input value="6" min="1" max="8" step="1" type="range" class="slider svelte-9v9his" id="slider2"></center></div> <h5 id="options">k</h5></center> </body></div> <span data-svelte-h="svelte-137m7jw">As demonstrated above, 5G divides the functionality of RRU and BBU into three distinct parts:
+   Radio Unit(RU), Distributed Unit(DU), and Centralized Unit(CU). In this architecture, the DU
+   and CU are software components that run on servers, while the RU consists of the radio
+   hardware responsible for transmitting and receiving signals. Each option for splitting up
+   functions into these components has its own advantages and disadvantages, and the suitability
+   of each can vary depending on specific environmental needs. Notebly, the splits option 7.2, is
+   the one chosen by the O-RAN Alliances, thus becoming a popular choice within the industry.</span> <h2 id="A-Bridge-from-O-RAN-to-its-security-concern-and-into-PTP" data-id="A-Bridge-from-O-RAN-to-its-security-concern-and-into-PTP" data-svelte-h="svelte-10czlm9"><span>A Bridge from O-RAN to its security concern, and into PTP.</span></h2> <span data-svelte-h="svelte-17kcphn">Now that we understand the structure of O-RAN and 5G, there&#39;s still one important aspect to
+   consider:
+   Security. With the added complexity that comes from allowing 	interoperability between component providers.
+   The security concern about the O-RAN architecture is of upmost importance and one of the major hurdle we need to
+   overcome on the road of 5G. <br>
+   This problem is multifaceted and complex. In this post however, we will only be discussing PTP, which is one of the protocol used in the O-RAN specification.</span></div>   <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">O-RAN &amp; PTP © 2024</p> </footer></div> </html> 
+			
+			<script>
+				{
+					__sveltekit_u4ejh2 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/oran"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.Bk_9S6mn.js"),
+						import("./_app/immutable/entry/app.CbLhJ6DH.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
