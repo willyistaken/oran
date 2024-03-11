@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Footer from './footer.svelte'
 	import Header from './header.svelte'
-    import Content from './+page.svelte'
-	import Hack from './hackmd.svelte'
+//   import Content from './+page.svelte'
+//	import Hack from './hackmd.svelte'
 	import 'open-props/style'
 	import 'open-props/normalize'
 	import 'open-props/buttons'
@@ -15,11 +15,16 @@
   <!-- Header -->
   <center>
 	<Header />
+<<<<<<< HEAD
   </center>
 	<main>
 		<Hack/>
 	</main>
 
+=======
+
+	<slot/>
+>>>>>>> d6fc58e (3/11 splite website up)
   <!-- Footer -->
 	<Footer />
 </div>

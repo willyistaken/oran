@@ -27,6 +27,12 @@ const setTheme = () => {
                            <b> {config.title}</b>
 </a>
 
+<a href="{base}/RAN" class="navi">RAN</a>
+<a href="{base}/5G" class="navi">5G</a>
+<a href="{base}/ORAN" class="navi">ORAN</a>
+<a href="{base}/PTP-Overview" class="navi">Overview of PTP</a>
+<a href="{base}/How-Does-PTP-Work" class="navi">How Does PTP Work?</a>
+<a href="{base}/PTP-Attacks" class="navi">Attacks</a>
 
 <!-- Theme -->
 <button id="theme-btn" class = "theme-btn" on:click= {()=>setTheme()} ><span>L</span></button>
@@ -41,6 +47,13 @@ const setTheme = () => {
 nav {
 padding-block:
     var(--size-7);
+}
+
+.navi:hover{
+	border-radius:5px;
+	border-width:2px;
+	height:80%;
+	font-weight:"bold";
 }
 
 .links {
