@@ -16,7 +16,7 @@
    
 </script>
 <div id="doc" class="content" data-hard-breaks="true">
-   <h1 style="white-space:nowrap;"><span>O-RAN & PTP: An Interective Guide</span></h1>
+   <h1 style="white-space:nowrap;"><span>O-RAN & PTP: An Interactive Guide</span></h1>
    <h2 id="Purpose-of-Our-Website" data-id="Purpose-of-Our-Website">
       <span>Purpose of This Website</span>
    </h2>
