@@ -127,3 +127,10 @@
 	
 
 </div>
+
+<style>
+.content{
+	min-height:5953px;
+	min-width:1297px;
+}
+</style>
