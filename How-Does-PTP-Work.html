@@ -7,20 +7,20 @@
 		
 		<link href="./_app/immutable/assets/0.BogZuhU-.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/index.BQTFKAGU.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.BRa5rW51.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.EUgQR-zj.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.C1IsJwdo.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.iY4o-8fB.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.Bj_NYYYq.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.TTUzHjlM.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.BVjV-XbJ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.CTZsFQ_c.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.D-Iqhmhr.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.BQ24v_F8.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.CJ0a16Qn.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.C3hL4W90.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/4.LaxlpTyH.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.Ch5iKPgZ.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.CXwu95VF.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/katex.BmffG-Dk.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <html class="light" lang="en"><div class="layout svelte-vv2tq3"> <center><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">  <nav class="svelte-xlcger"> <a href="." class="title svelte-xlcger"><b>O-RAN &amp; PTP</b></a> <a href="./RAN" class="navi svelte-xlcger" data-svelte-h="svelte-1n5q685">RAN</a> <a href="./5G" class="navi svelte-xlcger" data-svelte-h="svelte-8hw9o7">5G</a> <a href="./ORAN" class="navi svelte-xlcger" data-svelte-h="svelte-n6fo9z">ORAN</a> <a href="./PTP-Overview" class="navi svelte-xlcger" data-svelte-h="svelte-1xgtpxp">Overview of PTP</a> <a href="./How-Does-PTP-Work" class="navi svelte-xlcger" data-svelte-h="svelte-w5rhct">How Does PTP Work?</a> <a href="./PTP-Attacks" class="navi svelte-xlcger" data-svelte-h="svelte-1nbv0ye">Attacks</a>  <button id="theme-btn" class="theme-btn" data-svelte-h="svelte-1o8xnog"><span>L</span></button></nav> <div style="display:grid" data-svelte-h="svelte-epdwz1"><img id="ytp1" src="https://www.tw-ytp.org/wp-content/uploads/2018/06/2018-logo_ytp_rgb_w.png" width="500px" height="200px" style="visibility:hidden; "> <img id="ytp2" src="https://www.tw-ytp.org/wp-content/uploads/2022/03/logo_ytp.png" width="500px" height="200px" style="position:absolute;"> </div></center> <head data-svelte-h="svelte-bo7pj8"><script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script> <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script></head>  <div id="doc" class="content" data-hard-breaks="true"><h1 id="How-PTP-works" data-id="How-PTP-works" data-svelte-h="svelte-rcdasg"><span>How PTP works</span></h1> <span data-svelte-h="svelte-1anhdbl">In a computer network, multiple nodes are interconnected by edges (connections) between these
-   devices. By employing the Best Master Clock Algorithm (BMCA), a PTP network determines the
+		<div style="display: contents">  <html class="light" lang="en"><div class="layout svelte-vv2tq3"> <center><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">  <nav class="svelte-xlcger"> <a href="." class="title svelte-xlcger"><b>O-RAN &amp; PTP</b></a> <a href="./RAN" class="navi svelte-xlcger" data-svelte-h="svelte-1n5q685">RAN</a> <a href="./5G" class="navi svelte-xlcger" data-svelte-h="svelte-8hw9o7">5G</a> <a href="./ORAN" class="navi svelte-xlcger" data-svelte-h="svelte-n6fo9z">ORAN</a> <a href="./PTP-Overview" class="navi svelte-xlcger" data-svelte-h="svelte-1xgtpxp">Overview of PTP</a> <a href="./How-Does-PTP-Work" class="navi svelte-xlcger" data-svelte-h="svelte-w5rhct">How Does PTP Work?</a> <a href="./PTP-Attacks" class="navi svelte-xlcger" data-svelte-h="svelte-1nbv0ye">Attacks</a>  <button id="theme-btn" class="theme-btn" data-svelte-h="svelte-1o8xnog"><span>L</span></button></nav> <div style="display:grid" data-svelte-h="svelte-epdwz1"><img id="ytp1" src="https://www.tw-ytp.org/wp-content/uploads/2018/06/2018-logo_ytp_rgb_w.png" width="500px" height="200px" style="visibility:hidden; "> <img id="ytp2" src="https://www.tw-ytp.org/wp-content/uploads/2022/03/logo_ytp.png" width="500px" height="200px" style="position:absolute;"> </div></center> <head data-svelte-h="svelte-bo7pj8"><script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script> <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script></head>  <div id="doc" class="content" data-hard-breaks="true"><h1 id="How-PTP-works" data-id="How-PTP-works" data-svelte-h="svelte-rcdasg"><span>How PTP works</span></h1> <span data-svelte-h="svelte-a5yq8m">In a computer network, multiple nodes are interconnected by edges (connections) between these
+   devices. By employing the Best Master Clock Algorithm (BMCA), a <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> network determines the
    hierarchy of clocks in the network. It removes redundant connections and organizes the entire
    network into a hierarchical structure resembling &quot;a tree.&quot; This simplifies time
    synchronization, as circular configurations are avoided. Within such a network, a single
@@ -38,7 +38,8 @@
    the time reference, while the slave clock receives time messages from its master. A slave-only
    clock continuously functions as a slave clock, being as a leaf of a tree. Conversely, the
    grandmaster represents the entire PTP network and is always a master, responsible for
-   providing the time reference for the entire network.</span> <h4 id="GrandmasterGM" data-id="GrandmasterGM" data-svelte-h="svelte-16sufzb"><span>Grandmaster(GM)</span></h4> <span data-svelte-h="svelte-1mj13kr">As explained above, there is </span><strong data-svelte-h="svelte-1elipq9"><span>ONLY</span></strong><span data-svelte-h="svelte-ljg7ou">one Grand Master (GM) in a single network, serving as the benchmark for time synchronization
+   providing the time reference for the entire network.</span> <h4 id="GrandmasterGM" data-id="GrandmasterGM" data-svelte-h="svelte-16sufzb"><span>Grandmaster(GM)</span></h4> <span data-svelte-h="svelte-1mj13kr">As explained above, there is </span><strong data-svelte-h="svelte-1elipq9"><span>ONLY</span></strong><span data-svelte-h="svelte-1w7f2u9"><space></space>  
+   one Grand Master (GM) in a single network, serving as the benchmark for time synchronization
    and providing standard time information to other clocks across the network. Unlike other types
    of clocks in the network, the GM typically receives time messages from an external time
    reference. However, in the case of cyberattacks or other emergencies, grandmasters must be
@@ -76,7 +77,7 @@
 			
 			<script>
 				{
-					__sveltekit_1uxayda = {
+					__sveltekit_t3xnof = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/oran"
 					};
@@ -86,8 +87,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.BRa5rW51.js"),
-						import("./_app/immutable/entry/app.BVjV-XbJ.js")
+						import("./_app/immutable/entry/start.C1IsJwdo.js"),
+						import("./_app/immutable/entry/app.D-Iqhmhr.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
