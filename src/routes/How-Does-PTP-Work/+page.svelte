@@ -21,7 +21,7 @@
    <h1 id="How-PTP-works" data-id="How-PTP-works"><span>How PTP works</span></h1>
    <span
       >In a computer network, multiple nodes are interconnected by edges (connections) between these
-   devices. By employing the Best Master Clock Algorithm (BMCA), a PTP network determines the
+   devices. By employing the Best Master Clock Algorithm (BMCA), a <span class="tooltip" data-tooltip="Precision Time Protocol">PTP</span> network determines the
    hierarchy of clocks in the network. It removes redundant connections and organizes the entire
    network into a hierarchical structure resembling "a tree." This simplifies time
    synchronization, as circular configurations are avoided. Within such a network, a single
@@ -71,7 +71,7 @@
    providing the time reference for the entire network.</span
       >
    <h4 id="GrandmasterGM" data-id="GrandmasterGM"><span>Grandmaster(GM)</span></h4>
-   <span>As explained above, there is </span><strong><span>ONLY</span></strong><span>
+   <span>As explained above, there is </span><strong><span>ONLY</span></strong><span><space/>  
    one Grand Master (GM) in a single network, serving as the benchmark for time synchronization
    and providing standard time information to other clocks across the network. Unlike other types
    of clocks in the network, the GM typically receives time messages from an external time
